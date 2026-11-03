@@ -51,6 +51,14 @@ export default function GameCard({ game, lists, onToggle }: Props) {
           {game.notes && <p className="card-note">{game.notes}</p>}
           <p className="card-cats">
             {game.categories.map((c) => categoryById[c]?.name ?? c).join(', ')}
+            {game.bggId != null && (
+              <>
+                {' '}
+                <a className="card-link" href={`https://boardgamegeek.com/boardgame/${game.bggId}`} target="_blank" rel="noopener noreferrer">
+                  See on BoardGameGeek
+                </a>
+              </>
+            )}
           </p>
           <ListMenu gameId={game.id} lists={lists} onToggle={onToggle} />
         </div>

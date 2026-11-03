@@ -77,3 +77,33 @@ export function applyFilters(games: Game[], f: Filters): Game[] {
     return true
   })
 }
+
+export type SortKey = 'title' | 'playtime' | 'complexity'
+
+export const SORT_OPTIONS: { id: SortKey; label: string }[] = [
+  { id: 'title', label: 'Title' },
+  { id: 'playtime', label: 'Shortest first' },
+  { id: 'complexity', label: 'Lightest first' },
+]
+
+function sortTitle(t: string): string {
+  return t.replace(/^(the|a)\s+/i, '').toLowerCase()
+}
+
+export function sortGames(games: Game[], key: SortKey): Game[] {
+  const byTitle = (a: Game, b: Game) => sortTitle(a.title).localeCompare(sortTitle(b.title))
+  const sorted = [...games]
+  switch (key) {
+    case 'title':
+      return sorted.sort(byTitle)
+    case 'playtime':
+      return sorted.sort(
+        (a, b) =>
+          a.playtimeMinutes.min - b.playtimeMinutes.min ||
+          (a.playtimeMinutes.max ?? a.playtimeMinutes.min) - (b.playtimeMinutes.max ?? b.playtimeMinutes.min) ||
+          byTitle(a, b),
+      )
+    case 'complexity':
+      return sorted.sort((a, b) => (a.complexity ?? 99) - (b.complexity ?? 99) || byTitle(a, b))
+  }
+}

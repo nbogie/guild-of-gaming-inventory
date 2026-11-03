@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { hasComplexityData, inventory } from '../data'
-import { applyFilters, EMPTY_FILTERS, isDefault, TIME_BANDS, type Filters } from '../filters'
+import { applyFilters, EMPTY_FILTERS, isDefault, SORT_OPTIONS, sortGames, TIME_BANDS, type Filters, type SortKey } from '../filters'
 import type { ListId, Lists } from '../types'
 import GameCard from './GameCard'
 import PlayerStepper from './PlayerStepper'
@@ -21,7 +21,8 @@ const COMPLEXITY = [
 export default function Shelf({ lists, onToggle }: Props) {
   const [f, setF] = useState<Filters>(EMPTY_FILTERS)
   const set = <K extends keyof Filters>(k: K, v: Filters[K]) => setF((p) => ({ ...p, [k]: v }))
-  const results = useMemo(() => applyFilters(inventory.games, f), [f])
+  const [sort, setSort] = useState<SortKey>('title')
+  const results = useMemo(() => sortGames(applyFilters(inventory.games, f), sort), [f, sort])
 
   const toggleCat = (id: string) =>
     set('categories', f.categories.includes(id) ? f.categories.filter((c) => c !== id) : [...f.categories, id])
@@ -104,11 +105,23 @@ export default function Shelf({ lists, onToggle }: Props) {
       </aside>
 
       <section className="results" aria-live="polite">
-        <p className="results-count">
-          {results.length === inventory.games.length
-            ? `All ${results.length} games on the shelf`
-            : `${results.length} of ${inventory.games.length} games`}
-        </p>
+        <div className="results-bar">
+          <p className="results-count">
+            {results.length === inventory.games.length
+              ? `All ${results.length} games on the shelf`
+              : `${results.length} of ${inventory.games.length} games`}
+          </p>
+          <label className="sort">
+            Sort by
+            <select value={sort} onChange={(e) => setSort(e.target.value as SortKey)}>
+              {SORT_OPTIONS.map((o) => (
+                <option key={o.id} value={o.id}>
+                  {o.label}
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
         {results.length === 0 ? (
           <div className="empty">
             <p>Nothing on the shelf fits that.</p>
