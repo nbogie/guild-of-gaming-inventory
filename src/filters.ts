@@ -52,7 +52,7 @@ function fitsTime(g: Game, band: TimeBand): boolean {
 
 function matchesQuery(g: Game, q: string): boolean {
   if (!q) return true
-  const hay = [g.title, g.description, ...g.expansions.map((e) => e.title)].join(' ').toLowerCase()
+  const hay = [g.title, ...g.expansions.map((e) => e.title)].join(' ').toLowerCase()
   return q
     .split(/\s+/)
     .filter(Boolean)
@@ -78,12 +78,13 @@ export function applyFilters(games: Game[], f: Filters): Game[] {
   })
 }
 
-export type SortKey = 'title' | 'playtime' | 'complexity'
+export type SortKey = 'title' | 'playtime' | 'complexity' | 'age'
 
 export const SORT_OPTIONS: { id: SortKey; label: string }[] = [
   { id: 'title', label: 'Title' },
   { id: 'playtime', label: 'Shortest first' },
   { id: 'complexity', label: 'Lightest first' },
+  { id: 'age', label: 'Youngest age first' },
 ]
 
 function sortTitle(t: string): string {
@@ -105,5 +106,7 @@ export function sortGames(games: Game[], key: SortKey): Game[] {
       )
     case 'complexity':
       return sorted.sort((a, b) => (a.complexity ?? 99) - (b.complexity ?? 99) || byTitle(a, b))
+    case 'age':
+      return sorted.sort((a, b) => a.minAge - b.minAge || byTitle(a, b))
   }
 }
