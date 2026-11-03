@@ -28,13 +28,19 @@
       "name": "Social Deduction & Bluffing Games",
       "tagline": null,
       "emoji": "🤔"
+    },
+    {
+      "id": "party",
+      "name": "Party & Word Games",
+      "tagline": null,
+      "emoji": "🎉"
     }
   ],
   "games": [
     {
       "id": "pandemic",
       "title": "Pandemic",
-      "bggId": null,
+      "bggId": 30549,
       "emoji": "🧪",
       "categories": [
         "cooperative"
@@ -48,6 +54,7 @@
         "min": 45,
         "max": 45
       },
+      "complexity": 2.4,
       "description": "Save the world from deadly diseases using teamwork and specialist roles.",
       "expansions": [
         {
@@ -61,7 +68,7 @@
     {
       "id": "forbidden-island",
       "title": "Forbidden Island",
-      "bggId": null,
+      "bggId": 65244,
       "emoji": "🌊",
       "categories": [
         "cooperative"
@@ -75,6 +82,7 @@
         "min": 30,
         "max": 45
       },
+      "complexity": 1.7,
       "description": "Grab treasures from a sinking island before time runs out.",
       "expansions": [],
       "notes": "Forbidden Desert is the sequel; both are in the collection."
@@ -82,7 +90,7 @@
     {
       "id": "forbidden-desert",
       "title": "Forbidden Desert",
-      "bggId": null,
+      "bggId": 136063,
       "emoji": "🏜️",
       "categories": [
         "cooperative"
@@ -96,6 +104,7 @@
         "min": 30,
         "max": 45
       },
+      "complexity": 2.0,
       "description": "Rebuild a flying machine in the desert before time runs out.",
       "expansions": [],
       "notes": "Sequel to Forbidden Island; both are in the collection."
@@ -103,7 +112,7 @@
     {
       "id": "castle-panic",
       "title": "Castle Panic",
-      "bggId": null,
+      "bggId": 43443,
       "emoji": "🏰",
       "categories": [
         "cooperative"
@@ -117,6 +126,7 @@
         "min": 45,
         "max": 60
       },
+      "complexity": 1.7,
       "description": "Work as a team to protect your castle from attacking monsters.",
       "expansions": [],
       "notes": null
@@ -124,7 +134,7 @@
     {
       "id": "legends-of-andor",
       "title": "Legends of Andor",
-      "bggId": null,
+      "bggId": 127398,
       "emoji": "⚔️",
       "categories": [
         "cooperative"
@@ -138,6 +148,7 @@
         "min": 60,
         "max": 90
       },
+      "complexity": 2.8,
       "description": "Narrative co-op fantasy with tactical quests and monster fighting.",
       "expansions": [],
       "notes": null
@@ -145,7 +156,7 @@
     {
       "id": "marvel-zombies",
       "title": "Marvel Zombies: A Zombicide Game",
-      "bggId": null,
+      "bggId": 351817,
       "emoji": "🧟",
       "categories": [
         "cooperative"
@@ -159,6 +170,7 @@
         "min": 60,
         "max": 60
       },
+      "complexity": 2.4,
       "description": "Control zombified Marvel heroes on a chaos-fueled mission of hunger and mayhem.",
       "expansions": [],
       "notes": null
@@ -166,7 +178,7 @@
     {
       "id": "walking-dead-no-sanctuary",
       "title": "The Walking Dead: No Sanctuary",
-      "bggId": null,
+      "bggId": 203759,
       "emoji": "🚶‍♂️",
       "categories": [
         "cooperative"
@@ -180,6 +192,7 @@
         "min": 120,
         "max": 120
       },
+      "complexity": 2.9,
       "description": "Survive the zombie apocalypse in a gritty, story-driven co-op with group morale management.",
       "expansions": [],
       "notes": null
@@ -187,7 +200,7 @@
     {
       "id": "dungeon-saga",
       "title": "Dungeon Saga",
-      "bggId": null,
+      "bggId": 160081,
       "emoji": "🧙‍♂️",
       "categories": [
         "cooperative"
@@ -201,6 +214,7 @@
         "min": 30,
         "max": 120
       },
+      "complexity": 2.4,
       "description": "Classic dungeon crawl with heroes vs undead, campaign or one-shot play.",
       "expansions": [],
       "notes": null
@@ -208,7 +222,7 @@
     {
       "id": "planet-of-the-apes",
       "title": "Planet of the Apes",
-      "bggId": null,
+      "bggId": 223777,
       "emoji": "🐵",
       "categories": [
         "cooperative"
@@ -222,6 +236,7 @@
         "min": 40,
         "max": 40
       },
+      "complexity": 2.6,
       "description": "Each player controls part of Taylor's psyche from the original film. Cooperate to survive!",
       "expansions": [],
       "notes": null
@@ -229,7 +244,7 @@
     {
       "id": "dead-of-winter",
       "title": "Dead of Winter",
-      "bggId": null,
+      "bggId": 150376,
       "emoji": "❄️",
       "categories": [
         "cooperative"
@@ -243,6 +258,7 @@
         "min": 60,
         "max": 120
       },
+      "complexity": 3.0,
       "description": "Psychological survival game with secret goals... and possible betrayal.",
       "expansions": [],
       "notes": null
@@ -250,7 +266,7 @@
     {
       "id": "super-dungeon-explore",
       "title": "Super Dungeon Explore",
-      "bggId": null,
+      "bggId": 92190,
       "emoji": "🧙‍♀️",
       "categories": [
         "cooperative"
@@ -264,6 +280,7 @@
         "min": 60,
         "max": 90
       },
+      "complexity": 2.7,
       "description": "Anime-style dungeon crawler. Heroes vs evil overlord in a loot-fueled rampage.",
       "expansions": [],
       "notes": null
@@ -271,7 +288,7 @@
     {
       "id": "wingspan",
       "title": "Wingspan",
-      "bggId": null,
+      "bggId": 266192,
       "emoji": "🐦",
       "categories": [
         "strategy"
@@ -285,11 +302,12 @@
         "min": 40,
         "max": 70
       },
+      "complexity": 2.5,
       "description": "Attract beautiful birds and build powerful chains in this peaceful, strategic engine builder.",
       "expansions": [
         {
           "title": "Wingspan: Asia",
-          "bggId": null,
+          "bggId": 366161,
           "note": "Standalone 1-2 player game with a 2-player Duet Mode, or expands the base game to 6-7 players with Flock Mode."
         }
       ],
@@ -298,7 +316,7 @@
     {
       "id": "ticket-to-ride-europe",
       "title": "Ticket to Ride: Europe",
-      "bggId": null,
+      "bggId": 14996,
       "emoji": "🛤️",
       "categories": [
         "strategy"
@@ -312,6 +330,7 @@
         "min": 30,
         "max": 60
       },
+      "complexity": 1.9,
       "description": "Build the most efficient train routes across Europe.",
       "expansions": [],
       "notes": null
@@ -319,7 +338,7 @@
     {
       "id": "catan",
       "title": "Catan",
-      "bggId": null,
+      "bggId": 13,
       "emoji": "🌍",
       "categories": [
         "strategy"
@@ -333,6 +352,7 @@
         "min": 60,
         "max": 60
       },
+      "complexity": 2.3,
       "description": "Trade and build settlements to dominate the island. The classic gateway game.",
       "expansions": [],
       "notes": null
@@ -340,7 +360,7 @@
     {
       "id": "quacks-of-quedlinburg",
       "title": "The Quacks of Quedlinburg",
-      "bggId": null,
+      "bggId": 244521,
       "emoji": "🧪",
       "categories": [
         "strategy"
@@ -354,6 +374,7 @@
         "min": 45,
         "max": 45
       },
+      "complexity": 1.9,
       "description": "Brew potions in this fun push-your-luck bag builder. Don't blow up your cauldron!",
       "expansions": [],
       "notes": null
@@ -361,7 +382,7 @@
     {
       "id": "7-wonders",
       "title": "7 Wonders",
-      "bggId": null,
+      "bggId": 68448,
       "emoji": "🏛️",
       "categories": [
         "strategy"
@@ -375,6 +396,7 @@
         "min": 30,
         "max": 30
       },
+      "complexity": 2.3,
       "description": "Develop your civilisation through three ages of card drafting and wonder building.",
       "expansions": [],
       "notes": null
@@ -382,7 +404,7 @@
     {
       "id": "carcassonne",
       "title": "Carcassonne",
-      "bggId": null,
+      "bggId": 822,
       "emoji": "🏰",
       "categories": [
         "tile-laying-visual"
@@ -396,11 +418,12 @@
         "min": 35,
         "max": 35
       },
+      "complexity": 1.9,
       "description": "Create the medieval landscape together, then compete for control!",
       "expansions": [
         {
           "title": "Inns & Cathedrals",
-          "bggId": null,
+          "bggId": 2993,
           "note": null
         }
       ],
@@ -409,7 +432,7 @@
     {
       "id": "tsuro-of-the-seas",
       "title": "Tsuro of the Seas",
-      "bggId": null,
+      "bggId": 124172,
       "emoji": "🐉",
       "categories": [
         "tile-laying-visual"
@@ -423,6 +446,7 @@
         "min": 20,
         "max": 40
       },
+      "complexity": 1.4,
       "description": "Stay on the board while dodging sea monsters and path chaos!",
       "expansions": [],
       "notes": null
@@ -430,7 +454,7 @@
     {
       "id": "hues-and-cues",
       "title": "Hues and Cues",
-      "bggId": null,
+      "bggId": 302520,
       "emoji": "🎨",
       "categories": [
         "tile-laying-visual"
@@ -444,6 +468,7 @@
         "min": 30,
         "max": 30
       },
+      "complexity": 1.1,
       "description": "Guess colours from vague clues. A chill, creative game that'll surprise you.",
       "expansions": [],
       "notes": null
@@ -451,7 +476,7 @@
     {
       "id": "dixit",
       "title": "Dixit",
-      "bggId": null,
+      "bggId": 39856,
       "emoji": "🎨",
       "categories": [
         "tile-laying-visual"
@@ -465,11 +490,12 @@
         "min": 30,
         "max": 30
       },
+      "complexity": 1.2,
       "description": "Use beautiful surreal art to bluff, guess, and interpret creative clues.",
       "expansions": [
         {
           "title": "Dixit: Disney",
-          "bggId": null,
+          "bggId": 381308,
           "note": null
         }
       ],
@@ -478,7 +504,7 @@
     {
       "id": "block-party",
       "title": "Block Party",
-      "bggId": null,
+      "bggId": 379300,
       "emoji": "🧱",
       "categories": [
         "tile-laying-visual"
@@ -492,6 +518,7 @@
         "min": 30,
         "max": 30
       },
+      "complexity": 1.0,
       "description": "Build wild things from blocks based on mystery themes. Great for all ages.",
       "expansions": [],
       "notes": null
@@ -499,7 +526,7 @@
     {
       "id": "the-resistance",
       "title": "The Resistance",
-      "bggId": null,
+      "bggId": 41114,
       "emoji": "🕵️",
       "categories": [
         "social-deduction"
@@ -513,6 +540,7 @@
         "min": 30,
         "max": 30
       },
+      "complexity": 1.6,
       "description": "Uncover the spies in your team before they sabotage the mission.",
       "expansions": [],
       "notes": null
@@ -520,7 +548,7 @@
     {
       "id": "saboteur",
       "title": "Saboteur",
-      "bggId": null,
+      "bggId": 9220,
       "emoji": "⛏️",
       "categories": [
         "social-deduction"
@@ -534,11 +562,12 @@
         "min": 30,
         "max": 30
       },
+      "complexity": 1.3,
       "description": "Who's digging for gold and who's secretly ruining the tunnels?",
       "expansions": [
         {
           "title": "Saboteur 2",
-          "bggId": null,
+          "bggId": 91072,
           "note": null
         }
       ],
@@ -547,7 +576,7 @@
     {
       "id": "mascarade",
       "title": "Mascarade",
-      "bggId": null,
+      "bggId": 139030,
       "emoji": "🎭",
       "categories": [
         "social-deduction"
@@ -561,6 +590,7 @@
         "min": 30,
         "max": 30
       },
+      "complexity": 1.5,
       "description": "Swap identities, bluff your way to coins, and try to keep track of who's who.",
       "expansions": [],
       "notes": null
@@ -568,7 +598,7 @@
     {
       "id": "shadow-hunters",
       "title": "Shadow Hunters",
-      "bggId": null,
+      "bggId": 24068,
       "emoji": "🧛",
       "categories": [
         "social-deduction"
@@ -582,7 +612,303 @@
         "min": 60,
         "max": 60
       },
+      "complexity": 1.8,
       "description": "Find your faction and take out the opposition in this fast-paced deduction brawl.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "wingspan-pocket",
+      "title": "Wingspan Pocket",
+      "bggId": 473508,
+      "emoji": "🐤",
+      "categories": [
+        "strategy"
+      ],
+      "players": {
+        "min": 1,
+        "max": 5
+      },
+      "minAge": 8,
+      "playtimeMinutes": {
+        "min": 25,
+        "max": 35
+      },
+      "complexity": 2.0,
+      "description": "A smaller, quicker card game take on Wingspan. Build your bird engine in half an hour.",
+      "expansions": [],
+      "notes": "Standalone game, not an expansion. Its cards do not mix with the full Wingspan."
+    },
+    {
+      "id": "munchkin",
+      "title": "Munchkin (Second Edition)",
+      "bggId": 1927,
+      "emoji": "🚪",
+      "categories": [
+        "party"
+      ],
+      "players": {
+        "min": 3,
+        "max": 6
+      },
+      "minAge": 10,
+      "playtimeMinutes": {
+        "min": 60,
+        "max": 120
+      },
+      "complexity": 1.8,
+      "description": "Kick down doors, fight monsters, grab loot, and stab your friends in the back on the way to level 10.",
+      "expansions": [
+        {
+          "title": "Munchkin Big Box Upgrade Set",
+          "bggId": null,
+          "note": "Upgrade components for Munchkin Big Box owners from the Second Edition crowdfund."
+        }
+      ],
+      "notes": "The source list says \"second edition\" and \"big box upgrade set\". Check which boxes are actually on the shelf."
+    },
+    {
+      "id": "stardew-valley",
+      "title": "Stardew Valley: The Board Game",
+      "bggId": 332290,
+      "emoji": "🌾",
+      "categories": [
+        "cooperative",
+        "strategy"
+      ],
+      "players": {
+        "min": 1,
+        "max": 4
+      },
+      "minAge": 13,
+      "playtimeMinutes": {
+        "min": 45,
+        "max": 200
+      },
+      "complexity": 2.8,
+      "description": "Farm, fish, mine, and make friends together to restore the Community Center before the seasons run out.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "deception-murder-in-hong-kong",
+      "title": "Deception: Murder in Hong Kong",
+      "bggId": 156129,
+      "emoji": "🔍",
+      "categories": [
+        "social-deduction"
+      ],
+      "players": {
+        "min": 4,
+        "max": 12
+      },
+      "minAge": 14,
+      "playtimeMinutes": {
+        "min": 20,
+        "max": 20
+      },
+      "complexity": 1.6,
+      "description": "A silent forensic scientist drops clues while investigators hunt the murderer hiding among them.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "codenames",
+      "title": "Codenames",
+      "bggId": 178900,
+      "emoji": "🗝️",
+      "categories": [
+        "party",
+        "social-deduction"
+      ],
+      "players": {
+        "min": 2,
+        "max": 8
+      },
+      "minAge": 10,
+      "playtimeMinutes": {
+        "min": 15,
+        "max": 15
+      },
+      "complexity": 1.3,
+      "description": "Spymasters give one-word clues so their team can find their agents on the grid without hitting the assassin.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "secret-hitler",
+      "title": "Secret Hitler",
+      "bggId": 188834,
+      "emoji": "🗳️",
+      "categories": [
+        "social-deduction"
+      ],
+      "players": {
+        "min": 5,
+        "max": 10
+      },
+      "minAge": 13,
+      "playtimeMinutes": {
+        "min": 45,
+        "max": 45
+      },
+      "complexity": 1.7,
+      "description": "Liberals and fascists pass laws and point fingers. Hidden roles, tense votes, plenty of lying.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "everdell",
+      "title": "Everdell",
+      "bggId": 199792,
+      "emoji": "🍂",
+      "categories": [
+        "strategy"
+      ],
+      "players": {
+        "min": 1,
+        "max": 4
+      },
+      "minAge": 10,
+      "playtimeMinutes": {
+        "min": 40,
+        "max": 80
+      },
+      "complexity": 2.8,
+      "description": "Place your critters and build a woodland city across the seasons in this gorgeous worker placement game.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "ark-nova",
+      "title": "Ark Nova",
+      "bggId": 342942,
+      "emoji": "🦒",
+      "categories": [
+        "strategy"
+      ],
+      "players": {
+        "min": 1,
+        "max": 4
+      },
+      "minAge": 14,
+      "playtimeMinutes": {
+        "min": 90,
+        "max": 150
+      },
+      "complexity": 3.8,
+      "description": "Plan and build a modern zoo. Long, deep engine-builder",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "the-gang",
+      "title": "The Gang",
+      "bggId": 411567,
+      "emoji": "🃏",
+      "categories": [
+        "cooperative"
+      ],
+      "players": {
+        "min": 3,
+        "max": 6
+      },
+      "minAge": 10,
+      "playtimeMinutes": {
+        "min": 20,
+        "max": 20
+      },
+      "complexity": 1.6,
+      "description": "Co-operative poker. Silently rank your hands against each other and pull off the heist together.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "scythe",
+      "title": "Scythe",
+      "bggId": 169786,
+      "emoji": "⚙️",
+      "categories": [
+        "strategy"
+      ],
+      "players": {
+        "min": 1,
+        "max": 5
+      },
+      "minAge": 14,
+      "playtimeMinutes": {
+        "min": 90,
+        "max": 115
+      },
+      "complexity": 3.5,
+      "description": "Giant mechs and farming in an alternate 1920s. Build your engine and claim territory with no dice in sight.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "brass-birmingham",
+      "title": "Brass: Birmingham",
+      "bggId": 224517,
+      "emoji": "🏭",
+      "categories": [
+        "strategy"
+      ],
+      "players": {
+        "min": 2,
+        "max": 4
+      },
+      "minAge": 14,
+      "playtimeMinutes": {
+        "min": 60,
+        "max": 120
+      },
+      "complexity": 3.9,
+      "description": "Build canals, railways, and industry through the Industrial Revolution. The heaviest game on the shelf.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "betrayal-at-house-on-the-hill",
+      "title": "Betrayal at House on the Hill (3rd Edition)",
+      "bggId": 358504,
+      "emoji": "🏚️",
+      "categories": [
+        "cooperative",
+        "social-deduction"
+      ],
+      "players": {
+        "min": 3,
+        "max": 6
+      },
+      "minAge": 12,
+      "playtimeMinutes": {
+        "min": 60,
+        "max": 60
+      },
+      "complexity": 2.4,
+      "description": "Explore a haunted house together until the haunt begins and one of you turns traitor.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "paleo",
+      "title": "Paleo",
+      "bggId": 300531,
+      "emoji": "🦴",
+      "categories": [
+        "cooperative"
+      ],
+      "players": {
+        "min": 2,
+        "max": 4
+      },
+      "minAge": 10,
+      "playtimeMinutes": {
+        "min": 45,
+        "max": 60
+      },
+      "complexity": 2.6,
+      "description": "Stone-age survival co-op. Split up, explore the unknown, and keep the tribe fed until the mammoth painting is done.",
       "expansions": [],
       "notes": null
     }
