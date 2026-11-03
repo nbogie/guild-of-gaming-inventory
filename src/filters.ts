@@ -87,6 +87,11 @@ export const SORT_OPTIONS: { id: SortKey; label: string }[] = [
   { id: 'age', label: 'Youngest age first' },
 ]
 
+function midPlaytime(g: Game): number {
+  const { min, max } = g.playtimeMinutes
+  return (min + (max ?? min)) / 2
+}
+
 function sortTitle(t: string): string {
   return t.replace(/^(the|a)\s+/i, '').toLowerCase()
 }
@@ -98,12 +103,7 @@ export function sortGames(games: Game[], key: SortKey): Game[] {
     case 'title':
       return sorted.sort(byTitle)
     case 'playtime':
-      return sorted.sort(
-        (a, b) =>
-          a.playtimeMinutes.min - b.playtimeMinutes.min ||
-          (a.playtimeMinutes.max ?? a.playtimeMinutes.min) - (b.playtimeMinutes.max ?? b.playtimeMinutes.min) ||
-          byTitle(a, b),
-      )
+      return sorted.sort((a, b) => midPlaytime(a) - midPlaytime(b) || byTitle(a, b))
     case 'complexity':
       return sorted.sort((a, b) => (a.complexity ?? 99) - (b.complexity ?? 99) || byTitle(a, b))
     case 'age':
