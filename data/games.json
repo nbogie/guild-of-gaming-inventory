@@ -1,0 +1,348 @@
+{
+  "meta": {
+    "name": "Guild of Gaming - Board Game Inventory",
+    "source": "original-discord-message.md",
+    "lastUpdated": "2026-11-03"
+  },
+  "categories": [
+    {
+      "id": "cooperative",
+      "name": "Co-operative Games",
+      "tagline": "Work together, or die trying...",
+      "emoji": "🟩"
+    },
+    {
+      "id": "strategy",
+      "name": "Strategy & Engine Builders",
+      "tagline": null,
+      "emoji": "🧠"
+    },
+    {
+      "id": "tile-laying-visual",
+      "name": "Tile-Laying & Visual Games",
+      "tagline": null,
+      "emoji": "🧩"
+    },
+    {
+      "id": "social-deduction",
+      "name": "Social Deduction & Bluffing Games",
+      "tagline": null,
+      "emoji": "🤔"
+    }
+  ],
+  "games": [
+    {
+      "id": "pandemic",
+      "title": "Pandemic",
+      "emoji": "🧪",
+      "category": "cooperative",
+      "players": { "min": 2, "max": 5 },
+      "minAge": 8,
+      "playtimeMinutes": { "min": 45, "max": 45 },
+      "description": "Save the world from deadly diseases using teamwork and specialist roles.",
+      "expansions": [
+        { "title": "Pandemic expansion (name not recorded)", "note": null }
+      ],
+      "notes": null
+    },
+    {
+      "id": "forbidden-island",
+      "title": "Forbidden Island",
+      "emoji": "🌊",
+      "category": "cooperative",
+      "players": { "min": 2, "max": 5 },
+      "minAge": 10,
+      "playtimeMinutes": { "min": 30, "max": 45 },
+      "description": "Grab treasures from a sinking island before time runs out.",
+      "expansions": [],
+      "notes": "Forbidden Desert is the sequel; both are in the collection."
+    },
+    {
+      "id": "forbidden-desert",
+      "title": "Forbidden Desert",
+      "emoji": "🏜️",
+      "category": "cooperative",
+      "players": { "min": 2, "max": 5 },
+      "minAge": 10,
+      "playtimeMinutes": { "min": 30, "max": 45 },
+      "description": "Rebuild a flying machine in the desert before time runs out.",
+      "expansions": [],
+      "notes": "Sequel to Forbidden Island; both are in the collection."
+    },
+    {
+      "id": "castle-panic",
+      "title": "Castle Panic",
+      "emoji": "🏰",
+      "category": "cooperative",
+      "players": { "min": 1, "max": 6 },
+      "minAge": 10,
+      "playtimeMinutes": { "min": 45, "max": 60 },
+      "description": "Work as a team to protect your castle from attacking monsters.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "legends-of-andor",
+      "title": "Legends of Andor",
+      "emoji": "⚔️",
+      "category": "cooperative",
+      "players": { "min": 2, "max": 4 },
+      "minAge": 10,
+      "playtimeMinutes": { "min": 60, "max": 90 },
+      "description": "Narrative co-op fantasy with tactical quests and monster fighting.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "marvel-zombies",
+      "title": "Marvel Zombies: A Zombicide Game",
+      "emoji": "🧟",
+      "category": "cooperative",
+      "players": { "min": 1, "max": 6 },
+      "minAge": 14,
+      "playtimeMinutes": { "min": 60, "max": 60 },
+      "description": "Control zombified Marvel heroes on a chaos-fueled mission of hunger and mayhem.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "walking-dead-no-sanctuary",
+      "title": "The Walking Dead: No Sanctuary",
+      "emoji": "🚶‍♂️",
+      "category": "cooperative",
+      "players": { "min": 1, "max": 4 },
+      "minAge": 15,
+      "playtimeMinutes": { "min": 120, "max": 120 },
+      "description": "Survive the zombie apocalypse in a gritty, story-driven co-op with group morale management.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "dungeon-saga",
+      "title": "Dungeon Saga",
+      "emoji": "🧙‍♂️",
+      "category": "cooperative",
+      "players": { "min": 2, "max": 5 },
+      "minAge": 14,
+      "playtimeMinutes": { "min": 30, "max": 120 },
+      "description": "Classic dungeon crawl with heroes vs undead, campaign or one-shot play.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "planet-of-the-apes",
+      "title": "Planet of the Apes",
+      "emoji": "🐵",
+      "category": "cooperative",
+      "players": { "min": 1, "max": 4 },
+      "minAge": 8,
+      "playtimeMinutes": { "min": 40, "max": 40 },
+      "description": "Each player controls part of Taylor's psyche from the original film. Cooperate to survive!",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "dead-of-winter",
+      "title": "Dead of Winter",
+      "emoji": "❄️",
+      "category": "cooperative",
+      "players": { "min": 2, "max": 5 },
+      "minAge": 13,
+      "playtimeMinutes": { "min": 60, "max": 120 },
+      "description": "Psychological survival game with secret goals... and possible betrayal.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "super-dungeon-explore",
+      "title": "Super Dungeon Explore",
+      "emoji": "🧙‍♀️",
+      "category": "cooperative",
+      "players": { "min": 2, "max": null },
+      "minAge": 13,
+      "playtimeMinutes": { "min": 60, "max": 90 },
+      "description": "Anime-style dungeon crawler. Heroes vs evil overlord in a loot-fueled rampage.",
+      "expansions": [],
+      "notes": "Source lists player count as 2+ with no upper limit."
+    },
+    {
+      "id": "wingspan",
+      "title": "Wingspan",
+      "emoji": "🐦",
+      "category": "strategy",
+      "players": { "min": 1, "max": 5 },
+      "minAge": 14,
+      "playtimeMinutes": { "min": 40, "max": 70 },
+      "description": "Attract beautiful birds and build powerful chains in this peaceful, strategic engine builder.",
+      "expansions": [
+        {
+          "title": "Wingspan: Asia",
+          "note": "Standalone 1–2 player game with a 2-player Duet Mode, or expands the base game to 6–7 players with Flock Mode."
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "ticket-to-ride-europe",
+      "title": "Ticket to Ride: Europe",
+      "emoji": "🛤️",
+      "category": "strategy",
+      "players": { "min": 2, "max": 5 },
+      "minAge": 8,
+      "playtimeMinutes": { "min": 30, "max": 60 },
+      "description": "Build the most efficient train routes across Europe.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "catan",
+      "title": "Catan",
+      "emoji": "🌍",
+      "category": "strategy",
+      "players": { "min": 3, "max": 4 },
+      "minAge": 10,
+      "playtimeMinutes": { "min": 60, "max": 60 },
+      "description": "Trade and build settlements to dominate the island. The classic gateway game.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "quacks-of-quedlinburg",
+      "title": "The Quacks of Quedlinburg",
+      "emoji": "🧪",
+      "category": "strategy",
+      "players": { "min": 2, "max": 4 },
+      "minAge": 10,
+      "playtimeMinutes": { "min": 45, "max": 45 },
+      "description": "Brew potions in this fun push-your-luck bag builder. Don't blow up your cauldron!",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "7-wonders",
+      "title": "7 Wonders",
+      "emoji": "🏛️",
+      "category": "strategy",
+      "players": { "min": 3, "max": 7 },
+      "minAge": 10,
+      "playtimeMinutes": { "min": 30, "max": 30 },
+      "description": "Develop your civilisation through three ages of card drafting and wonder building.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "carcassonne",
+      "title": "Carcassonne",
+      "emoji": "🏰",
+      "category": "tile-laying-visual",
+      "players": { "min": 2, "max": 6 },
+      "minAge": 7,
+      "playtimeMinutes": { "min": 35, "max": 35 },
+      "description": "Create the medieval landscape together, then compete for control!",
+      "expansions": [
+        { "title": "Inns & Cathedrals", "note": null }
+      ],
+      "notes": null
+    },
+    {
+      "id": "tsuro-of-the-seas",
+      "title": "Tsuro of the Seas",
+      "emoji": "🐉",
+      "category": "tile-laying-visual",
+      "players": { "min": 2, "max": 8 },
+      "minAge": 8,
+      "playtimeMinutes": { "min": 20, "max": 40 },
+      "description": "Stay on the board while dodging sea monsters and path chaos!",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "hues-and-cues",
+      "title": "Hues and Cues",
+      "emoji": "🎨",
+      "category": "tile-laying-visual",
+      "players": { "min": 3, "max": 10 },
+      "minAge": 8,
+      "playtimeMinutes": { "min": 30, "max": 30 },
+      "description": "Guess colours from vague clues. A chill, creative game that'll surprise you.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "dixit",
+      "title": "Dixit",
+      "emoji": "🎨",
+      "category": "tile-laying-visual",
+      "players": { "min": 3, "max": 6 },
+      "minAge": 8,
+      "playtimeMinutes": { "min": 30, "max": 30 },
+      "description": "Use beautiful surreal art to bluff, guess, and interpret creative clues.",
+      "expansions": [
+        { "title": "Dixit: Disney", "note": null }
+      ],
+      "notes": null
+    },
+    {
+      "id": "block-party",
+      "title": "Block Party",
+      "emoji": "🧱",
+      "category": "tile-laying-visual",
+      "players": { "min": 2, "max": 6 },
+      "minAge": 8,
+      "playtimeMinutes": { "min": 30, "max": 30 },
+      "description": "Build wild things from blocks based on mystery themes. Great for all ages.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "the-resistance",
+      "title": "The Resistance",
+      "emoji": "🕵️",
+      "category": "social-deduction",
+      "players": { "min": 5, "max": 10 },
+      "minAge": 13,
+      "playtimeMinutes": { "min": 30, "max": 30 },
+      "description": "Uncover the spies in your team before they sabotage the mission.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "saboteur",
+      "title": "Saboteur",
+      "emoji": "⛏️",
+      "category": "social-deduction",
+      "players": { "min": 3, "max": 12 },
+      "minAge": 8,
+      "playtimeMinutes": { "min": 30, "max": 30 },
+      "description": "Who's digging for gold and who's secretly ruining the tunnels?",
+      "expansions": [
+        { "title": "Saboteur 2", "note": null }
+      ],
+      "notes": null
+    },
+    {
+      "id": "mascarade",
+      "title": "Mascarade",
+      "emoji": "🎭",
+      "category": "social-deduction",
+      "players": { "min": 4, "max": 12 },
+      "minAge": 10,
+      "playtimeMinutes": { "min": 30, "max": 30 },
+      "description": "Swap identities, bluff your way to coins, and try to keep track of who's who.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "shadow-hunters",
+      "title": "Shadow Hunters",
+      "emoji": "🧛",
+      "category": "social-deduction",
+      "players": { "min": 4, "max": 8 },
+      "minAge": 13,
+      "playtimeMinutes": { "min": 60, "max": 60 },
+      "description": "Find your faction and take out the opposition in this fast-paced deduction brawl.",
+      "expansions": [],
+      "notes": null
+    }
+  ]
+}
