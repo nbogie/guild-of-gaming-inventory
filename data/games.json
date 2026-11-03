@@ -158,12 +158,12 @@
       "title": "Super Dungeon Explore",
       "emoji": "🧙‍♀️",
       "category": "cooperative",
-      "players": { "min": 2, "max": null },
+      "players": { "min": 2, "max": 6 },
       "minAge": 13,
       "playtimeMinutes": { "min": 60, "max": 90 },
       "description": "Anime-style dungeon crawler. Heroes vs evil overlord in a loot-fueled rampage.",
       "expansions": [],
-      "notes": "Source lists player count as 2+ with no upper limit."
+      "notes": null
     },
     {
       "id": "wingspan",
@@ -177,7 +177,7 @@
       "expansions": [
         {
           "title": "Wingspan: Asia",
-          "note": "Standalone 1–2 player game with a 2-player Duet Mode, or expands the base game to 6–7 players with Flock Mode."
+          "note": "Standalone 1-2 player game with a 2-player Duet Mode, or expands the base game to 6-7 players with Flock Mode."
         }
       ],
       "notes": null
