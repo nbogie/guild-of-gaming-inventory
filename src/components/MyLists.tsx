@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import { inventory } from '../data'
 import { exportPayload, parseImport } from '../lists'
+import { copyToClipboard, listsAsDiscordMarkdown } from '../exports'
 import { LIST_IDS, LIST_LABELS, type ListId, type Lists } from '../types'
 import GameCard from './GameCard'
 
@@ -31,16 +32,11 @@ export default function MyLists({ lists, onToggle, onImport, onClear }: Props) {
     setStatus('Downloaded your lists as a file.')
   }
 
-  const copyText = async () => {
-    const text = LIST_IDS.filter((id) => lists[id].length)
-      .map((id) => `${LIST_LABELS[id]}\n${lists[id].map((g) => `- ${gameById[g]?.title ?? g}`).join('\n')}`)
-      .join('\n\n')
-    try {
-      await navigator.clipboard.writeText(text)
-      setStatus('Copied your lists as text.')
-    } catch {
-      setStatus('Could not copy. Download the file instead.')
-    }
+  const discordExportable = lists['want-to-play'].length + lists['want-to-try'].length + lists['can-teach'].length > 0
+
+  const copyForDiscord = async () => {
+    const ok = await copyToClipboard(listsAsDiscordMarkdown(lists))
+    setStatus(ok ? 'Copied your want-to-play and can-teach titles.' : 'Could not copy to the clipboard.')
   }
 
   const onFile = async (file: File | undefined) => {
@@ -86,13 +82,13 @@ export default function MyLists({ lists, onToggle, onImport, onClear }: Props) {
       )}
 
       <div className="tools">
-        <p>Lists are stored on this device only. Export to keep a copy or move them to another device.</p>
+        <p>Lists are stored on this device only. Download a file to keep a copy or move them to another device. "Export titles for Discord" copies your want-to-play and can-teach games in a form suitable for a discord message.</p>
         <div className="tools-row">
           <button type="button" className="btn" onClick={download} disabled={total === 0}>
             Download file
           </button>
-          <button type="button" className="btn" onClick={copyText} disabled={total === 0}>
-            Copy as text
+          <button type="button" className="btn" onClick={copyForDiscord} disabled={!discordExportable}>
+            Export titles for Discord
           </button>
           <button type="button" className="btn" onClick={() => fileRef.current?.click()}>
             Import file

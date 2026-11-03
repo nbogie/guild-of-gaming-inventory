@@ -608,6 +608,11 @@ button {
   gap: 6px 20px;
 }
 
+.colophon-links .link {
+  font-size: inherit;
+  padding: 0;
+}
+
 .colophon-links a {
   color: var(--brass);
   font-weight: 600;
