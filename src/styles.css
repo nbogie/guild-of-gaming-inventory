@@ -598,6 +598,23 @@ button {
   font-size: 0.9rem;
 }
 
+.colophon p {
+  margin: 0 0 8px;
+}
+
+.colophon-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+}
+
+.colophon-links a {
+  color: var(--brass);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .chip,
   .tag,

@@ -4,6 +4,7 @@ import Shelf from './components/Shelf'
 import { inventory } from './data'
 import { useLists } from './lists'
 import { LIST_IDS } from './types'
+import { LINKS } from './links'
 
 type Page = 'shelf' | 'lists'
 
@@ -42,7 +43,24 @@ export default function App() {
       </main>
 
       <footer className="colophon">
-        <p>Inventory last updated {inventory.meta.lastUpdated}. Spotted a mistake? Edit the list on GitHub.</p>
+        <p>Inventory last updated {inventory.meta.lastUpdated}.</p>
+        <p className="colophon-links">
+          {LINKS.suggestAGame && (
+            <a href={LINKS.suggestAGame} target="_blank" rel="noopener noreferrer">
+              Suggest a game
+            </a>
+          )}
+          {LINKS.siteFeedback && (
+            <a href={LINKS.siteFeedback} target="_blank" rel="noopener noreferrer">
+              Site feedback
+            </a>
+          )}
+          {LINKS.editOnGitHub && (
+            <a href={LINKS.editOnGitHub} target="_blank" rel="noopener noreferrer">
+              Fix a mistake on GitHub
+            </a>
+          )}
+        </p>
       </footer>
     </div>
   )
