@@ -492,14 +492,30 @@
       },
       "complexity": 1.2,
       "description": "Use beautiful surreal art to bluff, guess, and interpret creative clues.",
-      "expansions": [
-        {
-          "title": "Dixit: Disney",
-          "bggId": 381308,
-          "note": null
-        }
-      ],
+      "expansions": [],
       "notes": null
+    },
+    {
+      "id": "dixit-disney",
+      "title": "Dixit: Disney Edition",
+      "bggId": 381308,
+      "emoji": "🏰",
+      "categories": [
+        "tile-laying-visual"
+      ],
+      "players": {
+        "min": 3,
+        "max": 6
+      },
+      "minAge": 8,
+      "playtimeMinutes": {
+        "min": 30,
+        "max": 30
+      },
+      "complexity": 1.1,
+      "description": "Dixit with Disney and Pixar artwork. Same bluffing and guessing, familiar faces on the cards.",
+      "expansions": [],
+      "notes": "Standalone game. Its cards can also be mixed into the original Dixit."
     },
     {
       "id": "block-party",
