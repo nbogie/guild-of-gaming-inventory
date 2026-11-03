@@ -17,7 +17,7 @@ export default function App() {
     <div className="app">
       <header className="masthead">
         <h1>Guild of Gaming</h1>
-        <p>{inventory.games.length} board-games on the shelf.</p>
+        <p>{inventory.games.length} board games and card games on the shelf.</p>
       </header>
 
       <nav className="pagenav" aria-label="Pages">
