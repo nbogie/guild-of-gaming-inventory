@@ -9,6 +9,7 @@
   --sage: #a9c4b4;
   --brass: #d4a24c;
   --pip: #b8322e;
+  --play: #c2672a;
   --want: #d4a24c;
   --teach: #3f8f7a;
   --played: #4e6fa3;
@@ -387,6 +388,7 @@ button {
   border-radius: 50%;
 }
 
+.mark-want-to-play { background: var(--play); }
 .mark-want-to-try { background: var(--want); }
 .mark-can-teach { background: var(--teach); }
 .mark-played { background: var(--played); }
@@ -440,6 +442,7 @@ button {
   color: var(--cream);
 }
 
+.tag-want-to-play { --c: var(--play); }
 .tag-want-to-try { --c: #9a6f1f; }
 .tag-can-teach { --c: var(--teach); }
 .tag-played { --c: var(--played); }

@@ -14,7 +14,7 @@ interface Props {
 const gameById = Object.fromEntries(inventory.games.map((g) => [g.id, g]))
 
 export default function MyLists({ lists, onToggle, onImport, onClear }: Props) {
-  const [active, setActive] = useState<ListId>('want-to-try')
+  const [active, setActive] = useState<ListId>('want-to-play')
   const [status, setStatus] = useState<string | null>(null)
   const fileRef = useRef<HTMLInputElement>(null)
   const total = LIST_IDS.reduce((n, id) => n + lists[id].length, 0)

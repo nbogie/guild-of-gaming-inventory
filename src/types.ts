@@ -38,10 +38,11 @@ export interface Inventory {
   games: Game[]
 }
 
-export const LIST_IDS = ['want-to-try', 'can-teach', 'played', 'favourite', 'not-for-me'] as const
+export const LIST_IDS = ['want-to-play', 'want-to-try', 'can-teach', 'played', 'favourite', 'not-for-me'] as const
 export type ListId = (typeof LIST_IDS)[number]
 
 export const LIST_LABELS: Record<ListId, string> = {
+  'want-to-play': 'Want to play',
   'want-to-try': 'Want to try',
   'can-teach': 'Can teach',
   played: 'Played',

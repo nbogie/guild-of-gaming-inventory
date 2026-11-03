@@ -16,7 +16,7 @@ export default function PlayerStepper({ value, onChange }: Props) {
       </button>
       <div className="stepper-face" aria-live="polite">
         <span className="stepper-num">{value ?? 'Any'}</span>
-        <span className="stepper-cap">{value == null ? 'any number of players' : value === 1 ? 'player tonight' : 'players tonight'}</span>
+        <span className="stepper-cap">{value == null ? 'any number of players' : value === 1 ? 'player' : 'players'}</span>
         <span className="stepper-pips" aria-hidden="true">
           {Array.from({ length: MAX }, (_, i) => (
             <i key={i} className={value != null && i < value ? 'on' : ''} />

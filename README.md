@@ -1,9 +1,9 @@
 # Guild of Gaming shelf
 
 A read-only, mobile-first web app that lists the group's board games and lets
-you find something to play tonight: by player count, length, kind of game,
-title, and (once the data exists) complexity. People can keep private lists on
-their own device (want to try, can teach, played, favourite, not for me) and
+you find something to play: by player count, length, kind of game,
+title, and complexity. People can keep private lists on
+their own device (want to play, want to try, can teach, played, favourite, not for me) and
 export or import them as a file.
 
 ## Data
