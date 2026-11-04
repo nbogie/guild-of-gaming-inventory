@@ -4,6 +4,8 @@ import { applyFilters, EMPTY_FILTERS, isDefault, SORT_OPTIONS, sortGames, TIME_B
 import type { ListId, Lists } from '../types'
 import GameCard from './GameCard'
 import PlayerStepper from './PlayerStepper'
+import { paramsToSearch, searchToUrl } from '../urlState'
+import { copyToClipboard } from '../exports'
 
 interface Props {
   lists: Lists
@@ -11,6 +13,11 @@ interface Props {
 }
 
 const HIDE_KEY = 'guild-of-gaming-hide-not-for-me'
+const CATEGORY_IDS = inventory.categories.map((c) => c.id)
+
+function initialSearch() {
+  return paramsToSearch(new URLSearchParams(window.location.search), CATEGORY_IDS)
+}
 
 const COMPLEXITY = [
   { v: 1, label: 'Light' },
@@ -21,9 +28,10 @@ const COMPLEXITY = [
 ]
 
 export default function Shelf({ lists, onToggle }: Props) {
-  const [f, setF] = useState<Filters>(EMPTY_FILTERS)
+  const [f, setF] = useState<Filters>(() => initialSearch().filters)
   const set = <K extends keyof Filters>(k: K, v: Filters[K]) => setF((p) => ({ ...p, [k]: v }))
-  const [sort, setSort] = useState<SortKey>('title')
+  const [sort, setSort] = useState<SortKey>(() => initialSearch().sort)
+  const [linkNote, setLinkNote] = useState<string | null>(null)
   const [hideNotForMe, setHideNotForMe] = useState<boolean>(() => {
     try {
       return localStorage.getItem(HIDE_KEY) === '1'
@@ -43,6 +51,14 @@ export default function Shelf({ lists, onToggle }: Props) {
   const clearAll = () => {
     setF(EMPTY_FILTERS)
     setHideNotForMe(false)
+    setLinkNote(null)
+  }
+
+  const copyLink = async () => {
+    const url = searchToUrl({ filters: f, sort }, CATEGORY_IDS)
+    if (!window.confirm('Copy a link to this search? It will replace whatever is on your clipboard.')) return
+    const ok = await copyToClipboard(url)
+    setLinkNote(ok ? 'Link copied. Anyone who opens it sees this search.' : 'Could not copy to the clipboard.')
   }
   const results = useMemo(() => {
     const filtered = applyFilters(inventory.games, f)
@@ -134,10 +150,22 @@ export default function Shelf({ lists, onToggle }: Props) {
           {notForMe.length > 0 && <span className="tab-n">{notForMe.length}</span>}
         </label>
 
-        {(!isDefault(f) || hideNotForMe) && (
-          <button type="button" className="link" onClick={clearAll}>
-            Clear all
-          </button>
+        <div className="control-actions">
+          {(!isDefault(f) || hideNotForMe) && (
+            <button type="button" className="link" onClick={clearAll}>
+              Clear all
+            </button>
+          )}
+          {(!isDefault(f) || sort !== 'title') && (
+            <button type="button" className="link" onClick={copyLink}>
+              Copy link to this search
+            </button>
+          )}
+        </div>
+        {linkNote && (
+          <p className="status" role="status">
+            {linkNote}
+          </p>
         )}
       </aside>
 

@@ -320,6 +320,16 @@ button {
   color: var(--cream);
 }
 
+.control-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+}
+
+.control-actions:empty {
+  display: none;
+}
+
 .link {
   background: none;
   border: 0;
@@ -618,8 +628,12 @@ button {
 }
 
 .status {
-  margin-top: 12px;
+  margin: 0;
   color: var(--cream);
+}
+
+.tools .status {
+  margin-top: 12px;
 }
 
 .colophon {
