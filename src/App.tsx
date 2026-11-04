@@ -21,7 +21,7 @@ export default function App() {
     )
     if (!ok) return
     const done = await copyToClipboard(inventoryAsDiscordPost())
-    setCopyNote(done ? 'Copied the full inventory. Paste it into Discord.' : 'Could not copy to the clipboard.')
+    setCopyNote(done ? 'Copied the full inventory.' : 'Could not copy to the clipboard.')
   }
 
   return (
