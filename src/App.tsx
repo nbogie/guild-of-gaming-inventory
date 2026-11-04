@@ -11,7 +11,7 @@ type Page = 'shelf' | 'lists'
 
 export default function App() {
   const [page, setPage] = useState<Page>('shelf')
-  const { lists, toggle, replaceAll, merge, clear } = useLists()
+  const { lists, toggle, replaceAll, merge, clear, clearList } = useLists()
   const listCount = LIST_IDS.reduce((n, id) => n + lists[id].length, 0)
   const [copyNote, setCopyNote] = useState<string | null>(null)
 
@@ -27,7 +27,7 @@ export default function App() {
   return (
     <div className="app">
       <header className="masthead">
-        <h1>Guild of Gaming</h1>
+        <h1>Guild of Gaming (Unofficial)</h1>
         <p>{inventory.games.length} board games and card games on the shelf.</p>
       </header>
 
@@ -48,6 +48,7 @@ export default function App() {
             lists={lists}
             onToggle={toggle}
             onClear={clear}
+            onClearList={clearList}
             onImport={(incoming, mode) => (mode === 'replace' ? replaceAll(incoming) : merge(incoming))}
           />
         )}

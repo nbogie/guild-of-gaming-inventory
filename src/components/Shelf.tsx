@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { hasComplexityData, inventory } from '../data'
 import { applyFilters, EMPTY_FILTERS, isDefault, SORT_OPTIONS, sortGames, TIME_BANDS, type Filters, type SortKey } from '../filters'
 import type { ListId, Lists } from '../types'
@@ -9,6 +9,8 @@ interface Props {
   lists: Lists
   onToggle: (listId: ListId, gameId: string) => void
 }
+
+const HIDE_KEY = 'guild-of-gaming-hide-not-for-me'
 
 const COMPLEXITY = [
   { v: 1, label: 'Light' },
@@ -22,7 +24,27 @@ export default function Shelf({ lists, onToggle }: Props) {
   const [f, setF] = useState<Filters>(EMPTY_FILTERS)
   const set = <K extends keyof Filters>(k: K, v: Filters[K]) => setF((p) => ({ ...p, [k]: v }))
   const [sort, setSort] = useState<SortKey>('title')
-  const results = useMemo(() => sortGames(applyFilters(inventory.games, f), sort), [f, sort])
+  const [hideNotForMe, setHideNotForMe] = useState<boolean>(() => {
+    try {
+      return localStorage.getItem(HIDE_KEY) === '1'
+    } catch {
+      return false
+    }
+  })
+  useEffect(() => {
+    try {
+      localStorage.setItem(HIDE_KEY, hideNotForMe ? '1' : '0')
+    } catch {
+      /* per-device convenience only */
+    }
+  }, [hideNotForMe])
+
+  const notForMe = lists['not-for-me']
+  const results = useMemo(() => {
+    const filtered = applyFilters(inventory.games, f)
+    const shown = hideNotForMe && notForMe.length ? filtered.filter((g) => !notForMe.includes(g.id)) : filtered
+    return sortGames(shown, sort)
+  }, [f, sort, hideNotForMe, notForMe])
 
   const toggleCat = (id: string) =>
     set('categories', f.categories.includes(id) ? f.categories.filter((c) => c !== id) : [...f.categories, id])
@@ -96,6 +118,17 @@ export default function Shelf({ lists, onToggle }: Props) {
           </div>
           </fieldset>
         )}
+
+        <label className={`check${notForMe.length ? '' : ' muted'}`}>
+          <input
+            type="checkbox"
+            checked={hideNotForMe}
+            disabled={notForMe.length === 0}
+            onChange={(e) => setHideNotForMe(e.target.checked)}
+          />
+          Hide games marked &ldquo;not for me&rdquo;
+          {notForMe.length > 0 && <span className="tab-n">{notForMe.length}</span>}
+        </label>
 
         {!isDefault(f) && (
           <button type="button" className="link" onClick={() => setF(EMPTY_FILTERS)}>

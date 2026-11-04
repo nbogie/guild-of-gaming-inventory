@@ -10,11 +10,12 @@ interface Props {
   onToggle: (listId: ListId, gameId: string) => void
   onImport: (incoming: unknown, mode: 'merge' | 'replace') => void
   onClear: () => void
+  onClearList: (listId: ListId) => void
 }
 
 const gameById = Object.fromEntries(inventory.games.map((g) => [g.id, g]))
 
-export default function MyLists({ lists, onToggle, onImport, onClear }: Props) {
+export default function MyLists({ lists, onToggle, onImport, onClear, onClearList }: Props) {
   const [active, setActive] = useState<ListId>('want-to-play')
   const [status, setStatus] = useState<string | null>(null)
   const fileRef = useRef<HTMLInputElement>(null)
@@ -74,11 +75,26 @@ export default function MyLists({ lists, onToggle, onImport, onClear }: Props) {
           <p>Open a game on the shelf and tap a list to add it.</p>
         </div>
       ) : (
-        <div className="cards">
-          {games.map((g) => (
-            <GameCard key={g.id} game={g} lists={lists} onToggle={onToggle} />
-          ))}
-        </div>
+        <>
+          <div className="cards">
+            {games.map((g) => (
+              <GameCard key={g.id} game={g} lists={lists} onToggle={onToggle} />
+            ))}
+          </div>
+          <button
+            type="button"
+            className="btn btn-quiet list-clear"
+            onClick={() => {
+              const n = games.length
+              if (window.confirm(`Remove ${n === 1 ? 'the one game' : `all ${n} games`} from ${LIST_LABELS[active].toLowerCase()}?`)) {
+                onClearList(active)
+                setStatus(`Cleared ${LIST_LABELS[active].toLowerCase()}.`)
+              }
+            }}
+          >
+            Clear this list
+          </button>
+        </>
       )}
 
       <div className="tools">

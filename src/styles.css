@@ -294,6 +294,32 @@ button {
   border-color: var(--cream);
 }
 
+.check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--cream);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.check.muted {
+  color: var(--sage);
+  cursor: default;
+}
+
+.check input {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  accent-color: var(--brass);
+}
+
+.check .tab-n {
+  background: var(--felt-line);
+  color: var(--cream);
+}
+
 .link {
   background: none;
   border: 0;
@@ -544,6 +570,10 @@ button {
   color: var(--cream);
   font-weight: 600;
   font-size: 1.15rem;
+}
+
+.list-clear {
+  margin-top: 16px;
 }
 
 .tools {

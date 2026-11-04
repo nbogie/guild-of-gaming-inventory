@@ -61,7 +61,9 @@ export function useLists() {
 
   const clear = useCallback(() => setLists(emptyLists()), [])
 
-  return { lists, toggle, replaceAll, merge, clear }
+  const clearList = useCallback((listId: ListId) => setLists((prev) => ({ ...prev, [listId]: [] })), [])
+
+  return { lists, toggle, replaceAll, merge, clear, clearList }
 }
 
 export function exportPayload(lists: Lists) {
