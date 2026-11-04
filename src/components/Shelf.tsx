@@ -40,6 +40,10 @@ export default function Shelf({ lists, onToggle }: Props) {
   }, [hideNotForMe])
 
   const notForMe = lists['not-for-me']
+  const clearAll = () => {
+    setF(EMPTY_FILTERS)
+    setHideNotForMe(false)
+  }
   const results = useMemo(() => {
     const filtered = applyFilters(inventory.games, f)
     const shown = hideNotForMe && notForMe.length ? filtered.filter((g) => !notForMe.includes(g.id)) : filtered
@@ -130,8 +134,8 @@ export default function Shelf({ lists, onToggle }: Props) {
           {notForMe.length > 0 && <span className="tab-n">{notForMe.length}</span>}
         </label>
 
-        {!isDefault(f) && (
-          <button type="button" className="link" onClick={() => setF(EMPTY_FILTERS)}>
+        {(!isDefault(f) || hideNotForMe) && (
+          <button type="button" className="link" onClick={clearAll}>
             Clear all
           </button>
         )}
@@ -159,7 +163,7 @@ export default function Shelf({ lists, onToggle }: Props) {
           <div className="empty">
             <p>Nothing on the shelf fits that.</p>
             <p>Try a different length, or loosen the player count.</p>
-            <button type="button" className="link" onClick={() => setF(EMPTY_FILTERS)}>
+            <button type="button" className="link" onClick={clearAll}>
               Clear all
             </button>
           </div>
