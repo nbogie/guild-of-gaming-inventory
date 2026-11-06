@@ -45,11 +45,11 @@ test.describe('search, filter, sort', () => {
   test('sort options reorder the results', async ({ page }) => {
     await page.goto('/')
     await page.getByLabel('Sort by').selectOption('playtime')
-    expect(await titles(page).first().textContent()).toMatch(/^Codenames/)
+    expect(await titles(page).first().textContent()).toMatch(/^Cartoon Network Fluxx/)
     await page.getByLabel('Sort by').selectOption('complexity')
     expect(await titles(page).first().textContent()).toMatch(/^Block Party/)
     await page.getByLabel('Sort by').selectOption('age')
-    expect(await titles(page).first().textContent()).toMatch(/^Dragonia/)
+    expect(await titles(page).first().textContent()).toMatch(/^Dobble: Harry Potter/)
   })
 
   test('opening a card shows its details and a BGG link', async ({ page }) => {

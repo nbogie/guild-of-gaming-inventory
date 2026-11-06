@@ -139,7 +139,7 @@
         "min": 30,
         "max": 45
       },
-      "complexity": 2.0,
+      "complexity": 2,
       "description": "Rebuild a flying machine in the desert before time runs out.",
       "expansions": [],
       "notes": "Sequel to Forbidden Island; both are in the collection."
@@ -229,7 +229,13 @@
       },
       "complexity": 2.9,
       "description": "Survive the zombie apocalypse in a gritty, story-driven co-op with group morale management.",
-      "expansions": [],
+      "expansions": [
+        {
+          "title": "Expansion 1: What Lies Ahead",
+          "bggId": 203949,
+          "note": "Season two scenarios in the countryside, with new stealth, fire and flaming walker mechanics."
+        }
+      ],
       "notes": null
     },
     {
@@ -299,7 +305,7 @@
         "min": 60,
         "max": 120
       },
-      "complexity": 3.0,
+      "complexity": 3,
       "description": "Psychological survival game with secret goals... and possible betrayal.",
       "expansions": [],
       "notes": null
@@ -592,7 +598,7 @@
         "min": 30,
         "max": 30
       },
-      "complexity": 1.0,
+      "complexity": 1,
       "description": "Build wild things from blocks based on mystery themes. Great for all ages.",
       "expansions": [],
       "notes": null
@@ -708,7 +714,7 @@
         "min": 25,
         "max": 35
       },
-      "complexity": 2.0,
+      "complexity": 2,
       "description": "A smaller, quicker card game take on Wingspan. Build your bird engine in half an hour.",
       "expansions": [],
       "notes": "Standalone game, not an expansion. Its cards do not mix with the full Wingspan."
@@ -1004,7 +1010,7 @@
         "min": 90,
         "max": 180
       },
-      "complexity": 3.0,
+      "complexity": 3,
       "description": "Sci-fi miniatures wargame starter set. Concord strike troopers against the Ghar, with full rules and scenarios in the box.",
       "expansions": [],
       "notes": "A tabletop wargame with miniatures rather than a board game. Needs table space and some assembly."
@@ -1139,7 +1145,7 @@
         "min": 45,
         "max": 45
       },
-      "complexity": 3.0,
+      "complexity": 3,
       "description": "A quick-fire escape room in a box. Solve four puzzles to find the extraction point before the town is overrun.",
       "expansions": [],
       "notes": "Zombie-themed puzzle game by Professor Puzzle."
@@ -1221,7 +1227,7 @@
         "min": 30,
         "max": 30
       },
-      "complexity": 1.0,
+      "complexity": 1,
       "description": "Pluck lizards off a sleeping dragon without disturbing her golden eggs. A light dexterity game for all ages.",
       "expansions": [],
       "notes": "Tactic edition of Reiner Knizia's Dreaming Dragon."
@@ -1265,7 +1271,7 @@
         "min": 20,
         "max": 40
       },
-      "complexity": 2.0,
+      "complexity": 2,
       "description": "A two-player duel of asymmetric fighters. Muldoon's security team against a pack of raptors, no dice involved.",
       "expansions": [],
       "notes": null
@@ -1287,7 +1293,7 @@
         "min": 60,
         "max": 90
       },
-      "complexity": 3.0,
+      "complexity": 3,
       "description": "Co-op Dragonlance battles. Heroes fight the Dragon Army across battlefields and adventure locations.",
       "expansions": [],
       "notes": null
@@ -1488,7 +1494,7 @@
         "min": 90,
         "max": 90
       },
-      "complexity": 2.0,
+      "complexity": 2,
       "description": "Munchkin in the grim darkness of the far future. Ultramarines, Necrons and Orks hunting loot.",
       "expansions": [],
       "notes": "Standalone game."
@@ -1510,7 +1516,7 @@
         "min": 60,
         "max": 60
       },
-      "complexity": 2.0,
+      "complexity": 2,
       "description": "Munchkin with Disney characters. Same silliness, friendlier faces.",
       "expansions": [],
       "notes": "Standalone game."
@@ -1536,6 +1542,359 @@
       "description": "Card-driven co-op campaign of hunters in Yharnam. Manage your hand, face the Blood Moon, and expect losses.",
       "expansions": [],
       "notes": null
+    },
+    {
+      "id": "flip-7",
+      "title": "Flip 7",
+      "bggId": 420087,
+      "description": "Push-your-luck card flipping. Keep drawing without repeating a number, bank your points, or go bust.",
+      "emoji": "7️⃣",
+      "categories": [
+        "party"
+      ],
+      "players": {
+        "min": 3,
+        "max": 18
+      },
+      "minAge": 8,
+      "playtimeMinutes": {
+        "min": 20,
+        "max": 20
+      },
+      "complexity": 1.03,
+      "notes": "Two copies on the shelf: the standard edition and the Deluxe edition (foil cards). Same game.",
+      "expansions": []
+    },
+    {
+      "expansions": [],
+      "notes": null,
+      "id": "hive-pocket",
+      "title": "Hive Pocket",
+      "bggId": 154597,
+      "emoji": "🐝",
+      "categories": [
+        "strategy"
+      ],
+      "players": {
+        "min": 2,
+        "max": 2
+      },
+      "minAge": 9,
+      "playtimeMinutes": {
+        "min": 20,
+        "max": 20
+      },
+      "complexity": 2.21,
+      "description": "Boardless two-player abstract. The tiles are the board, and the goal is to surround the enemy queen bee."
+    },
+    {
+      "expansions": [],
+      "notes": null,
+      "id": "exploding-kittens",
+      "title": "Exploding Kittens",
+      "bggId": 172225,
+      "emoji": "🐱",
+      "categories": [
+        "party"
+      ],
+      "players": {
+        "min": 2,
+        "max": 5
+      },
+      "minAge": 7,
+      "playtimeMinutes": {
+        "min": 15,
+        "max": 15
+      },
+      "complexity": 1.08,
+      "description": "Russian roulette with cats. Draw cards, avoid the exploding kitten, and defuse it if you can."
+    },
+    {
+      "expansions": [],
+      "notes": null,
+      "id": "dobble-harry-potter",
+      "title": "Dobble: Harry Potter",
+      "bggId": 63268,
+      "emoji": "⚡",
+      "categories": [
+        "party"
+      ],
+      "players": {
+        "min": 2,
+        "max": 8
+      },
+      "minAge": 6,
+      "playtimeMinutes": {
+        "min": 15,
+        "max": 15
+      },
+      "complexity": 1.04,
+      "description": "Spot the one matching symbol between two cards before anyone else. Harry Potter edition with five mini games."
+    },
+    {
+      "expansions": [],
+      "notes": null,
+      "id": "courtisans",
+      "title": "Courtisans",
+      "bggId": 402283,
+      "emoji": "👑",
+      "categories": [
+        "strategy"
+      ],
+      "players": {
+        "min": 2,
+        "max": 5
+      },
+      "minAge": 8,
+      "playtimeMinutes": {
+        "min": 20,
+        "max": 30
+      },
+      "complexity": 1.3,
+      "description": "Play three cards a turn to raise or ruin noble families at the royal banquet, then score on where they land."
+    },
+    {
+      "expansions": [],
+      "notes": null,
+      "id": "zombie-dice",
+      "title": "Zombie Dice",
+      "bggId": 62871,
+      "emoji": "🧟",
+      "categories": [
+        "party"
+      ],
+      "players": {
+        "min": 2,
+        "max": 99
+      },
+      "minAge": 10,
+      "playtimeMinutes": {
+        "min": 10,
+        "max": 20
+      },
+      "complexity": 1.1,
+      "description": "Very light zombie-themed push-your luck-game. You are the zombie. Roll for brains, stop before you take three shotgun blasts."
+    },
+    {
+      "expansions": [],
+      "notes": null,
+      "id": "rummikub",
+      "title": "Rummikub (Travel Edition)",
+      "bggId": 811,
+      "emoji": "🔢",
+      "categories": [
+        "classic"
+      ],
+      "players": {
+        "min": 2,
+        "max": 4
+      },
+      "minAge": 8,
+      "playtimeMinutes": {
+        "min": 60,
+        "max": 60
+      },
+      "complexity": 1.71,
+      "description": "Tile rummy. Lay runs and sets, rearrange the table to your advantage, and empty your rack first."
+    },
+    {
+      "expansions": [],
+      "notes": null,
+      "id": "antidote",
+      "title": "Antidote",
+      "bggId": 150783,
+      "emoji": "🧪",
+      "categories": [
+        "social-deduction"
+      ],
+      "players": {
+        "min": 2,
+        "max": 7
+      },
+      "minAge": 13,
+      "playtimeMinutes": {
+        "min": 20,
+        "max": 30
+      },
+      "complexity": 1.67,
+      "description": "Lab scientists exposed to a toxin. Trade, steal and discard to deduce which formula is the cure before time runs out."
+    },
+    {
+      "expansions": [],
+      "notes": null,
+      "id": "kluster",
+      "title": "Kluster",
+      "bggId": 277458,
+      "emoji": "🧲",
+      "categories": [
+        "party"
+      ],
+      "players": {
+        "min": 1,
+        "max": 4
+      },
+      "minAge": 14,
+      "playtimeMinutes": {
+        "min": 10,
+        "max": 20
+      },
+      "complexity": 1.04,
+      "description": "Magnetic dexterity. Place your stones inside the cord without any snapping together, or take the lot."
+    },
+    {
+      "expansions": [],
+      "notes": null,
+      "id": "cartoon-network-fluxx",
+      "title": "Cartoon Network Fluxx",
+      "bggId": 160814,
+      "emoji": "📺",
+      "categories": [
+        "party"
+      ],
+      "players": {
+        "min": 2,
+        "max": 6
+      },
+      "minAge": 8,
+      "playtimeMinutes": {
+        "min": 15,
+        "max": 15
+      },
+      "complexity": 1.43,
+      "description": "The card game where the cards change the rules, with Adventure Time, Regular Show and friends."
+    },
+    {
+      "expansions": [],
+      "notes": null,
+      "id": "star-fluxx",
+      "title": "Star Fluxx",
+      "bggId": 102104,
+      "emoji": "🛸",
+      "categories": [
+        "party"
+      ],
+      "players": {
+        "min": 2,
+        "max": 6
+      },
+      "minAge": 8,
+      "playtimeMinutes": {
+        "min": 10,
+        "max": 40
+      },
+      "complexity": 1.42,
+      "description": "Fluxx in space. The rules and the goal keep changing as you chase keepers and dodge creepers."
+    },
+    {
+      "expansions": [],
+      "notes": "Plays on its own, or combine with Exploding Kittens for up to 9 players.",
+      "id": "zombie-kittens",
+      "title": "Zombie Kittens",
+      "bggId": 362202,
+      "emoji": "🐈‍⬛",
+      "categories": [
+        "party"
+      ],
+      "players": {
+        "min": 2,
+        "max": 5
+      },
+      "minAge": 7,
+      "playtimeMinutes": {
+        "min": 15,
+        "max": 15
+      },
+      "complexity": 1.22,
+      "description": "Exploding Kittens where the dead come back. Explode, haunt the living, and claw your way back in."
+    },
+    {
+      "expansions": [],
+      "notes": null,
+      "id": "judge-dredd",
+      "title": "Judge Dredd",
+      "bggId": 1098,
+      "emoji": "⚖️",
+      "categories": [
+        "classic"
+      ],
+      "players": {
+        "min": 2,
+        "max": 6
+      },
+      "minAge": 8,
+      "playtimeMinutes": {
+        "min": 90,
+        "max": 90
+      },
+      "complexity": 1.9,
+      "description": "The 1982 Games Workshop board game. Judges patrol Mega-City One, arrest perps and keep the cards they win."
+    },
+    {
+      "expansions": [],
+      "notes": null,
+      "id": "the-isle-of-cats",
+      "title": "The Isle of Cats",
+      "bggId": 281259,
+      "emoji": "🐈",
+      "categories": [
+        "tile-laying-visual",
+        "strategy"
+      ],
+      "players": {
+        "min": 1,
+        "max": 4
+      },
+      "minAge": 8,
+      "playtimeMinutes": {
+        "min": 60,
+        "max": 90
+      },
+      "complexity": 2.36,
+      "description": "Rescue cats before Lord Vesh arrives. Draft cards, fit cat tiles onto your boat, and keep families together."
+    },
+    {
+      "expansions": [],
+      "notes": null,
+      "id": "unstable-unicorns",
+      "title": "Unstable Unicorns",
+      "bggId": 234190,
+      "emoji": "🦄",
+      "categories": [
+        "party"
+      ],
+      "players": {
+        "min": 2,
+        "max": 8
+      },
+      "minAge": 8,
+      "playtimeMinutes": {
+        "min": 30,
+        "max": 60
+      },
+      "complexity": 1.49,
+      "description": "Build a stable of seven unicorns while sabotaging everyone else's. Cute and vicious."
+    },
+    {
+      "expansions": [],
+      "notes": null,
+      "id": "sticky-cthulhu",
+      "title": "Sticky Cthulhu",
+      "bggId": 335131,
+      "emoji": "🐙",
+      "categories": [
+        "party"
+      ],
+      "players": {
+        "min": 2,
+        "max": 6
+      },
+      "minAge": 6,
+      "playtimeMinutes": {
+        "min": 15,
+        "max": 15
+      },
+      "complexity": 1,
+      "description": "Slap matching creature tiles with a sticky tentacle. Grab a Deep One and suffer a curse."
     }
   ]
 }
