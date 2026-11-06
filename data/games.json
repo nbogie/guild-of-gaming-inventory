@@ -46,6 +46,24 @@
       "name": "Team vs Team",
       "tagline": null,
       "emoji": "🤝"
+    },
+    {
+      "id": "dexterity",
+      "name": "Dexterity",
+      "tagline": null,
+      "emoji": "🤹"
+    },
+    {
+      "id": "chaos-humour-pop-culture",
+      "name": "Chaos, Humour & Pop Culture",
+      "tagline": null,
+      "emoji": "🤪"
+    },
+    {
+      "id": "sci-fi-techy",
+      "name": "Sci-Fi & Techy",
+      "tagline": null,
+      "emoji": "🖥️"
     }
   ],
   "games": [
@@ -56,16 +74,17 @@
       "emoji": "🌊",
       "categories": [
         "cooperative",
-        "team-vs-team"
+        "team-vs-team",
+        "sci-fi-techy"
       ],
       "players": {
-        "min": 6,
+        "min": 2,
         "max": 8
       },
-      "minAge": 14,
+      "minAge": 12,
       "playtimeMinutes": {
         "min": 45,
-        "max": 60
+        "max": 45
       },
       "complexity": 2.21,
       "description": "Torpedoes away! Hunt for your opponent's sub in this exciting, real-time team game.",
@@ -320,7 +339,7 @@
       ],
       "players": {
         "min": 2,
-        "max": 6
+        "max": null
       },
       "minAge": 13,
       "playtimeMinutes": {
@@ -587,7 +606,8 @@
       "bggId": 379300,
       "emoji": "🧱",
       "categories": [
-        "tile-laying-visual"
+        "tile-laying-visual",
+        "dexterity"
       ],
       "players": {
         "min": 2,
@@ -631,7 +651,8 @@
       "bggId": 9220,
       "emoji": "⛏️",
       "categories": [
-        "social-deduction"
+        "social-deduction",
+        "team-vs-team"
       ],
       "players": {
         "min": 3,
@@ -725,7 +746,8 @@
       "bggId": 1927,
       "emoji": "🚪",
       "categories": [
-        "party"
+        "party",
+        "chaos-humour-pop-culture"
       ],
       "players": {
         "min": 3,
@@ -1216,6 +1238,7 @@
       "bggId": 123495,
       "emoji": "🐲",
       "categories": [
+        "dexterity",
         "classic"
       ],
       "players": {
@@ -1238,15 +1261,16 @@
       "bggId": 193557,
       "emoji": "💾",
       "categories": [
-        "strategy"
+        "strategy",
+        "sci-fi-techy"
       ],
       "players": {
         "min": 2,
         "max": 4
       },
-      "minAge": 12,
+      "minAge": 14,
       "playtimeMinutes": {
-        "min": 15,
+        "min": 30,
         "max": 30
       },
       "complexity": 1.8,
@@ -1349,16 +1373,17 @@
       "bggId": 401076,
       "emoji": "🖖",
       "categories": [
-        "strategy"
+        "strategy",
+        "sci-fi-techy"
       ],
       "players": {
         "min": 2,
-        "max": 6
+        "max": 2
       },
       "minAge": 14,
       "playtimeMinutes": {
-        "min": 120,
-        "max": 180
+        "min": 45,
+        "max": 90
       },
       "complexity": 3.5,
       "description": "Command Starfleet or the Dominion through missions where diplomacy and research matter as much as combat. Miniatures included.",
@@ -1393,7 +1418,8 @@
       "bggId": 272738,
       "emoji": "🦈",
       "categories": [
-        "social-deduction"
+        "social-deduction",
+        "chaos-humour-pop-culture"
       ],
       "players": {
         "min": 2,
@@ -1416,7 +1442,8 @@
       "emoji": "🟥",
       "categories": [
         "party",
-        "team-vs-team"
+        "team-vs-team",
+        "dexterity"
       ],
       "players": {
         "min": 2,
@@ -1461,7 +1488,8 @@
       "bggId": 189848,
       "emoji": "🦸",
       "categories": [
-        "party"
+        "party",
+        "chaos-humour-pop-culture"
       ],
       "players": {
         "min": 3,
@@ -1483,16 +1511,17 @@
       "bggId": 257700,
       "emoji": "💀",
       "categories": [
-        "party"
+        "party",
+        "chaos-humour-pop-culture"
       ],
       "players": {
         "min": 3,
         "max": 6
       },
-      "minAge": 12,
+      "minAge": 10,
       "playtimeMinutes": {
-        "min": 90,
-        "max": 90
+        "min": 60,
+        "max": 120
       },
       "complexity": 2,
       "description": "Munchkin in the grim darkness of the far future. Ultramarines, Necrons and Orks hunting loot.",
@@ -1505,7 +1534,8 @@
       "bggId": 312346,
       "emoji": "🐭",
       "categories": [
-        "party"
+        "party",
+        "chaos-humour-pop-culture"
       ],
       "players": {
         "min": 3,
@@ -1514,7 +1544,7 @@
       "minAge": 10,
       "playtimeMinutes": {
         "min": 60,
-        "max": 60
+        "max": 120
       },
       "complexity": 2,
       "description": "Munchkin with Disney characters. Same silliness, friendlier faces.",
@@ -1705,15 +1735,16 @@
       "bggId": 150783,
       "emoji": "🧪",
       "categories": [
-        "social-deduction"
+        "social-deduction",
+        "sci-fi-techy"
       ],
       "players": {
         "min": 2,
-        "max": 7
+        "max": 4
       },
-      "minAge": 13,
+      "minAge": 14,
       "playtimeMinutes": {
-        "min": 20,
+        "min": 30,
         "max": 30
       },
       "complexity": 1.67,
@@ -1727,6 +1758,7 @@
       "bggId": 277458,
       "emoji": "🧲",
       "categories": [
+        "dexterity",
         "party"
       ],
       "players": {
@@ -1793,7 +1825,8 @@
       "bggId": 362202,
       "emoji": "🐈‍⬛",
       "categories": [
-        "party"
+        "party",
+        "chaos-humour-pop-culture"
       ],
       "players": {
         "min": 2,
@@ -1815,7 +1848,8 @@
       "bggId": 1098,
       "emoji": "⚖️",
       "categories": [
-        "classic"
+        "classic",
+        "chaos-humour-pop-culture"
       ],
       "players": {
         "min": 2,
@@ -1823,8 +1857,8 @@
       },
       "minAge": 8,
       "playtimeMinutes": {
-        "min": 90,
-        "max": 90
+        "min": 60,
+        "max": 120
       },
       "complexity": 1.9,
       "description": "The 1982 Games Workshop board game. Judges patrol Mega-City One, arrest perps and keep the cards they win."
@@ -1882,6 +1916,7 @@
       "bggId": 335131,
       "emoji": "🐙",
       "categories": [
+        "dexterity",
         "party"
       ],
       "players": {
@@ -1895,6 +1930,74 @@
       },
       "complexity": 1,
       "description": "Slap matching creature tiles with a sticky tentacle. Grab a Deep One and suffer a curse."
+    },
+    {
+      "id": "root",
+      "title": "Root",
+      "bggId": 237182,
+      "emoji": "🦝",
+      "categories": [
+        "strategy"
+      ],
+      "players": {
+        "min": 2,
+        "max": 4
+      },
+      "minAge": 14,
+      "playtimeMinutes": {
+        "min": 60,
+        "max": 90
+      },
+      "complexity": 3.84,
+      "description": "Asymmetric woodland war. Cats, birds, mice and a lone vagabond each play by their own rules in a fight for the forest.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "expansions": [],
+      "notes": null,
+      "id": "trump-the-game",
+      "title": "Trump: The Game",
+      "bggId": 1824,
+      "emoji": "🗳️",
+      "categories": [
+        "classic",
+        "chaos-humour-pop-culture"
+      ],
+      "players": {
+        "min": 2,
+        "max": 4
+      },
+      "minAge": 12,
+      "playtimeMinutes": {
+        "min": 60,
+        "max": 60
+      },
+      "complexity": 1.64,
+      "description": "Bid blind on properties, then trade and backstab your way to the biggest fortune. Milton Bradley, 1989."
+    },
+    {
+      "expansions": [],
+      "notes": null,
+      "id": "gammarauders",
+      "title": "Gammarauders",
+      "bggId": 1408,
+      "emoji": "🦖",
+      "categories": [
+        "strategy",
+        "chaos-humour-pop-culture"
+      ],
+      "players": {
+        "min": 2,
+        "max": 6
+      },
+      "minAge": 16,
+      "playtimeMinutes": {
+        "min": 60,
+        "max": 120
+      },
+      "complexity": 2.1,
+      "description": "TSR 1987 wargame of giant bioborg kaiju smashing each other's fortresses in a radioactive wasteland."
     }
   ]
 }
