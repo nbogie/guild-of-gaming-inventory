@@ -44,6 +44,28 @@
   ],
   "games": [
     {
+      "id": "captain-sonar",
+      "title": "Captain Sonar",
+      "bggId": 171131,
+      "emoji": "🌊",
+      "categories": [
+        "cooperative"
+      ],
+      "players": {
+        "min": 6,
+        "max": 8
+      },
+      "minAge": 14,
+      "playtimeMinutes": {
+        "min": 45,
+        "max": 60
+      },
+      "complexity": 2.21,
+      "description": "Torpedoes away! Hunt for your opponent's sub in this exciting, real-time team game.",
+      "expansions": [],
+      "notes": null
+    },
+    {
       "id": "pandemic",
       "title": "Pandemic",
       "bggId": 30549,
