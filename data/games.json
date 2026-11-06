@@ -87,9 +87,9 @@
         "max": 45
       },
       "complexity": 2.21,
-      "description": "Torpedoes away! Hunt for your opponent's sub in this exciting, real-time team game.",
+      "description": "Real-time submarine warfare with teams. Communication is key!",
       "expansions": [],
-      "notes": null
+      "notes": "Also playable turn-by-turn for slower chaos."
     },
     {
       "id": "pandemic",
@@ -137,7 +137,7 @@
         "max": 45
       },
       "complexity": 1.7,
-      "description": "Grab treasures from a sinking island before time runs out.",
+      "description": "Grab treasures from a sinking island or rebuild a flying machine in the desert - both before time runs out.",
       "expansions": [],
       "notes": "Forbidden Desert is the sequel; both are in the collection."
     },
@@ -303,7 +303,7 @@
         "max": 40
       },
       "complexity": 2.6,
-      "description": "Each player controls part of Taylor's psyche from the original film. Cooperate to survive!",
+      "description": "Each player controls part of Taylor's psyche from the original film - cooperate to survive!",
       "expansions": [],
       "notes": null
     },
@@ -347,7 +347,7 @@
         "max": 90
       },
       "complexity": 2.7,
-      "description": "Anime-style dungeon crawler. Heroes vs evil overlord in a loot-fueled rampage.",
+      "description": "Anime-style dungeon crawler - heroes vs evil overlord in a loot-fueled rampage.",
       "expansions": [],
       "notes": null
     },
@@ -759,7 +759,7 @@
         "max": 120
       },
       "complexity": 1.8,
-      "description": "Kick down doors, fight monsters, grab loot, and stab your friends in the back on the way to level 10.",
+      "description": "Silly dungeon crawling with loot, betrayal, and puns galore.",
       "expansions": [
         {
           "title": "Munchkin Big Box Upgrade Set",
@@ -1274,7 +1274,7 @@
         "max": 30
       },
       "complexity": 1.8,
-      "description": "Hackers race to wall off the most valuable sections of a bank's mainframe in this quick area-control game.",
+      "description": "Hack the mainframe, outsmart your opponents, and control the cyberbank.",
       "expansions": [],
       "notes": null
     },
@@ -1386,7 +1386,7 @@
         "max": 90
       },
       "complexity": 3.5,
-      "description": "Command Starfleet or the Dominion through missions where diplomacy and research matter as much as combat. Miniatures included.",
+      "description": "Two-player tactical starship battle in the Trek universe - manage your fleet, issue orders, and control the galaxy.",
       "expansions": [],
       "notes": null
     },
@@ -1431,7 +1431,7 @@
         "max": 60
       },
       "complexity": 2.2,
-      "description": "One player is the shark, hidden and hunting swimmers. The others track it down, then face it on the Orca.",
+      "description": "One player is the shark. The others try to survive Amity Island and then the Orca showdown.",
       "expansions": [],
       "notes": null
     },
@@ -1501,7 +1501,7 @@
         "max": 120
       },
       "complexity": 2.1,
-      "description": "Munchkin with Marvel heroes and villains. Kick down doors, fight, loot, backstab.",
+      "description": "Silly dungeon crawling with loot, betrayal, and puns galore.  This one has Marvel heroes and villains.",
       "expansions": [],
       "notes": "Standalone game."
     },
@@ -1524,7 +1524,7 @@
         "max": 120
       },
       "complexity": 2,
-      "description": "Munchkin in the grim darkness of the far future. Ultramarines, Necrons and Orks hunting loot.",
+      "description": "Silly dungeon crawling with loot, betrayal, and puns galore. This one in the grim darkness of the far future. Ultramarines, Necrons and Orks...",
       "expansions": [],
       "notes": "Standalone game."
     },
@@ -1547,7 +1547,7 @@
         "max": 120
       },
       "complexity": 2,
-      "description": "Munchkin with Disney characters. Same silliness, friendlier faces.",
+      "description": "Silly dungeon crawling with loot, betrayal, and puns galore.  This one with Disney characters.",
       "expansions": [],
       "notes": "Standalone game."
     },
@@ -1748,7 +1748,7 @@
         "max": 30
       },
       "complexity": 1.67,
-      "description": "Lab scientists exposed to a toxin. Trade, steal and discard to deduce which formula is the cure before time runs out."
+      "description": "You're poisoned. Trade, bluff, and deduce the antidote before it's too late."
     },
     {
       "expansions": [],
@@ -1838,7 +1838,7 @@
         "max": 15
       },
       "complexity": 1.22,
-      "description": "Exploding Kittens where the dead come back. Explode, haunt the living, and claw your way back in."
+      "description": "Exploding Kittens... but now you can come back from the dead."
     },
     {
       "expansions": [],
@@ -1861,7 +1861,7 @@
         "max": 120
       },
       "complexity": 1.9,
-      "description": "The 1982 Games Workshop board game. Judges patrol Mega-City One, arrest perps and keep the cards they win."
+      "description": "Arrest perps and bring justice to Mega-City One - because you are the law!"
     },
     {
       "expansions": [],
@@ -1974,7 +1974,7 @@
         "max": 60
       },
       "complexity": 1.64,
-      "description": "Bid blind on properties, then trade and backstab your way to the biggest fortune. Milton Bradley, 1989."
+      "description": "It's business, backstabbing, and bravado in a 1980s power trip of property domination."
     },
     {
       "expansions": [],
@@ -1997,7 +1997,7 @@
         "max": 120
       },
       "complexity": 2.1,
-      "description": "TSR 1987 wargame of giant bioborg kaiju smashing each other's fortresses in a radioactive wasteland."
+      "description": "Cyber-mutant kaiju battle it out in a radioactive wasteland of weird."
     }
   ]
 }
