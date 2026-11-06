@@ -14,7 +14,7 @@ test.describe('search, filter, sort', () => {
   test('title search narrows results and ignores descriptions', async ({ page }) => {
     await page.goto('/')
     await page.getByPlaceholder('Search titles').fill('wingspan')
-    await expect(count(page)).toHaveText('2 of 39 games')
+    await expect(count(page)).toHaveText(/^2 of \d+ games$/)
     await page.getByPlaceholder('Search titles').fill('card drafting')
     await expect(page.locator('.empty')).toBeVisible()
     await page.locator('.empty').getByRole('button', { name: 'Clear all' }).click()
@@ -27,18 +27,19 @@ test.describe('search, filter, sort', () => {
     for (let i = 0; i < 5; i++) await more.click()
     await expect(page.locator('.stepper-num')).toHaveText('6')
     await page.getByRole('button', { name: 'About an hour' }).click()
-    await expect(count(page)).toHaveText(/^\d+ of 39 games$/)
+    await expect(count(page)).toHaveText(/^\d+ of \d+ games$/)
     const shown = await titles(page).allTextContents()
     expect(shown).toContain('Castle Panic')
-    expect(shown).not.toContain('Catan')
+    expect(shown).not.toContain('Stratego')
   })
 
   test('category chips match any selected category', async ({ page }) => {
     await page.goto('/')
     await page.getByRole('button', { name: 'Party & Word Games' }).click()
-    await expect(titles(page)).toHaveCount(2)
+    const party = await titles(page).count()
+    expect(party).toBeGreaterThan(0)
     await page.getByRole('button', { name: 'Co-operative Games' }).click()
-    expect(await titles(page).count()).toBeGreaterThan(2)
+    expect(await titles(page).count()).toBeGreaterThan(party)
   })
 
   test('sort options reorder the results', async ({ page }) => {
@@ -48,7 +49,7 @@ test.describe('search, filter, sort', () => {
     await page.getByLabel('Sort by').selectOption('complexity')
     expect(await titles(page).first().textContent()).toMatch(/^Block Party/)
     await page.getByLabel('Sort by').selectOption('age')
-    expect(await titles(page).first().textContent()).toMatch(/^Carcassonne/)
+    expect(await titles(page).first().textContent()).toMatch(/^Dragonia/)
   })
 
   test('opening a card shows its details and a BGG link', async ({ page }) => {
@@ -65,10 +66,10 @@ test.describe('links to a search', () => {
     await expect(page.getByRole('button', { name: 'Co-operative Games' })).toHaveAttribute('aria-pressed', 'true')
     await expect(page.getByRole('button', { name: 'About an hour' })).toHaveAttribute('aria-pressed', 'true')
     await expect(page.getByLabel('Sort by')).toHaveValue('playtime')
-    await expect(count(page)).toHaveText(/^\d+ of 39 games$/)
+    await expect(count(page)).toHaveText(/^\d+ of \d+ games$/)
     const shown = await titles(page).allTextContents()
     expect(shown).toContain('Castle Panic')
-    expect(shown).not.toContain('Catan')
+    expect(shown).not.toContain('Stratego')
   })
 
   test('ignores junk in the query string', async ({ page }) => {

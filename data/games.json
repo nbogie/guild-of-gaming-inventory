@@ -1,8 +1,8 @@
 {
   "meta": {
     "name": "Guild of Gaming - Board Game Inventory",
-    "source": "original-discord-message.md",
-    "lastUpdated": "2026-11-03"
+    "source": "discord messages, in-person photos (incomplete)",
+    "lastUpdated": "2026-11-06"
   },
   "categories": [
     {
@@ -34,6 +34,12 @@
       "name": "Party & Word Games",
       "tagline": null,
       "emoji": "🎉"
+    },
+    {
+      "id": "classic",
+      "name": "Classics & Family Games",
+      "tagline": null,
+      "emoji": "🎯"
     }
   ],
   "games": [
@@ -58,9 +64,9 @@
       "description": "Save the world from deadly diseases using teamwork and specialist roles.",
       "expansions": [
         {
-          "title": "Pandemic expansion (name not recorded)",
-          "bggId": null,
-          "note": null
+          "title": "Pandemic: On the Brink",
+          "bggId": 40849,
+          "note": "Adds new roles, events, five-player rules and optional harder challenges."
         }
       ],
       "notes": null
@@ -199,7 +205,7 @@
     },
     {
       "id": "dungeon-saga",
-      "title": "Dungeon Saga",
+      "title": "Dungeon Saga: Dwarf King's Quest",
       "bggId": 160081,
       "emoji": "🧙‍♂️",
       "categories": [
@@ -216,7 +222,13 @@
       },
       "complexity": 2.4,
       "description": "Classic dungeon crawl with heroes vs undead, campaign or one-shot play.",
-      "expansions": [],
+      "expansions": [
+        {
+          "title": "The Adventurer's Companion",
+          "bggId": 195004,
+          "note": "Build your own heroes, villains and dungeons, with levelling rules, solo and co-op modes."
+        }
+      ],
       "notes": null
     },
     {
@@ -308,7 +320,7 @@
         {
           "title": "Wingspan: Asia",
           "bggId": 366161,
-          "note": "Standalone 1-2 player game with a 2-player Duet Mode, or expands the base game to 6-7 players with Flock Mode."
+          "note": "Standalone 1-2 player game with a Duet Mode, or with the base game: 1-7 players using Flock Mode."
         }
       ],
       "notes": null
@@ -332,7 +344,18 @@
       },
       "complexity": 1.9,
       "description": "Build the most efficient train routes across Europe.",
-      "expansions": [],
+      "expansions": [
+        {
+          "title": "Map Collection 3: The Heart of Africa",
+          "bggId": 131188,
+          "note": "New map for 2-5 players."
+        },
+        {
+          "title": "Map Collection 4: Nederland",
+          "bggId": 147938,
+          "note": "New map for 2-5 players with toll routes. Listed as \"Pays Bas\" (the French name)."
+        }
+      ],
       "notes": null
     },
     {
@@ -354,7 +377,13 @@
       },
       "complexity": 2.3,
       "description": "Trade and build settlements to dominate the island. The classic gateway game.",
-      "expansions": [],
+      "expansions": [
+        {
+          "title": "5-6 Player Extension",
+          "bggId": 2807,
+          "note": "With this extension: 3-6 players."
+        }
+      ],
       "notes": null
     },
     {
@@ -925,6 +954,549 @@
       },
       "complexity": 2.6,
       "description": "Stone-age survival co-op. Split up, explore the unknown, and keep the tribe fed until the mammoth painting is done.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "beyond-the-gates-of-antares",
+      "title": "Beyond the Gates of Antares: Strike Vector One - The Xilos Horizon",
+      "bggId": 183968,
+      "emoji": "🚀",
+      "categories": [
+        "strategy"
+      ],
+      "players": {
+        "min": 2,
+        "max": 6
+      },
+      "minAge": 15,
+      "playtimeMinutes": {
+        "min": 90,
+        "max": 180
+      },
+      "complexity": 3.0,
+      "description": "Sci-fi miniatures wargame starter set. Concord strike troopers against the Ghar, with full rules and scenarios in the box.",
+      "expansions": [],
+      "notes": "A tabletop wargame with miniatures rather than a board game. Needs table space and some assembly."
+    },
+    {
+      "id": "risk",
+      "title": "Risk",
+      "bggId": 181,
+      "emoji": "🌐",
+      "categories": [
+        "classic",
+        "strategy"
+      ],
+      "players": {
+        "min": 2,
+        "max": 6
+      },
+      "minAge": 10,
+      "playtimeMinutes": {
+        "min": 120,
+        "max": 120
+      },
+      "complexity": 2.1,
+      "description": "Roll dice, push armies across the map, and try to conquer the world before your alliances fall apart.",
+      "expansions": [],
+      "notes": "Edition not recorded."
+    },
+    {
+      "id": "trivial-pursuit",
+      "title": "Trivial Pursuit",
+      "bggId": 2952,
+      "emoji": "❓",
+      "categories": [
+        "classic",
+        "party"
+      ],
+      "players": {
+        "min": 2,
+        "max": 6
+      },
+      "minAge": 12,
+      "playtimeMinutes": {
+        "min": 90,
+        "max": 90
+      },
+      "complexity": 1.6,
+      "description": "Answer questions across six categories to fill your wheel with wedges. The pub quiz in a box.",
+      "expansions": [],
+      "notes": "Edition not recorded. The BGG id is for the original Genus Edition."
+    },
+    {
+      "id": "stratego",
+      "title": "Stratego",
+      "bggId": 1917,
+      "emoji": "🚩",
+      "categories": [
+        "classic"
+      ],
+      "players": {
+        "min": 2,
+        "max": 2
+      },
+      "minAge": 8,
+      "playtimeMinutes": {
+        "min": 45,
+        "max": 45
+      },
+      "complexity": 1.8,
+      "description": "Hide your flag, bluff with your ranks, and capture theirs in this two-player classic of secret armies.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "pokemon-labyrinth",
+      "title": "Pokémon Labyrinth",
+      "bggId": 1219,
+      "emoji": "⚡",
+      "categories": [
+        "classic"
+      ],
+      "players": {
+        "min": 2,
+        "max": 4
+      },
+      "minAge": 7,
+      "playtimeMinutes": {
+        "min": 20,
+        "max": 30
+      },
+      "complexity": 1.3,
+      "description": "Slide the maze walls to reach the Pokémon you need before anyone else does. Ravensburger's Labyrinth with Pikachu and friends.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "medical-mysteries-nyc",
+      "title": "Medical Mysteries: NYC Emergency Room",
+      "bggId": 415036,
+      "emoji": "🏥",
+      "categories": [
+        "cooperative"
+      ],
+      "players": {
+        "min": 1,
+        "max": 4
+      },
+      "minAge": 14,
+      "playtimeMinutes": {
+        "min": 30,
+        "max": 60
+      },
+      "complexity": 2.2,
+      "description": "Play ER doctors diagnosing four patients against the clock. Escape-room style deduction with a medical twist.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "escape-from-dead-town",
+      "title": "Escape from Dead Town",
+      "bggId": 344119,
+      "emoji": "🧟",
+      "categories": [
+        "cooperative"
+      ],
+      "players": {
+        "min": 1,
+        "max": 4
+      },
+      "minAge": 12,
+      "playtimeMinutes": {
+        "min": 45,
+        "max": 45
+      },
+      "complexity": 3.0,
+      "description": "A quick-fire escape room in a box. Solve four puzzles to find the extraction point before the town is overrun.",
+      "expansions": [],
+      "notes": "Zombie-themed puzzle game by Professor Puzzle."
+    },
+    {
+      "id": "dark-souls",
+      "title": "Dark Souls: The Board Game",
+      "bggId": 197831,
+      "emoji": "🔥",
+      "categories": [
+        "cooperative"
+      ],
+      "players": {
+        "min": 1,
+        "max": 4
+      },
+      "minAge": 14,
+      "playtimeMinutes": {
+        "min": 90,
+        "max": 120
+      },
+      "complexity": 3.1,
+      "description": "Brutal co-op dungeon crawl with miniatures. Learn the boss patterns or die trying, again and again.",
+      "expansions": [
+        {
+          "title": "Characters Expansion",
+          "bggId": 285975,
+          "note": "Adds new playable characters."
+        },
+        {
+          "title": "Iron Keep Expansion",
+          "bggId": 203717,
+          "note": "New location, enemies and bosses."
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "king-of-tokyo",
+      "title": "King of Tokyo",
+      "bggId": 70323,
+      "emoji": "🦖",
+      "categories": [
+        "party"
+      ],
+      "players": {
+        "min": 2,
+        "max": 6
+      },
+      "minAge": 8,
+      "playtimeMinutes": {
+        "min": 30,
+        "max": 30
+      },
+      "complexity": 1.5,
+      "description": "Giant monsters roll dice and smash each other for control of Tokyo. Fast, loud and great with a crowd.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "dreaming-dragon",
+      "title": "Dragonia (Dreaming Dragon)",
+      "bggId": 123495,
+      "emoji": "🐲",
+      "categories": [
+        "classic"
+      ],
+      "players": {
+        "min": 2,
+        "max": 4
+      },
+      "minAge": 6,
+      "playtimeMinutes": {
+        "min": 30,
+        "max": 30
+      },
+      "complexity": 1.0,
+      "description": "Pluck lizards off a sleeping dragon without disturbing her golden eggs. A light dexterity game for all ages.",
+      "expansions": [],
+      "notes": "Tactic edition of Reiner Knizia's Dreaming Dragon."
+    },
+    {
+      "id": "android-mainframe",
+      "title": "Android: Mainframe",
+      "bggId": 193557,
+      "emoji": "💾",
+      "categories": [
+        "strategy"
+      ],
+      "players": {
+        "min": 2,
+        "max": 4
+      },
+      "minAge": 12,
+      "playtimeMinutes": {
+        "min": 15,
+        "max": 30
+      },
+      "complexity": 1.8,
+      "description": "Hackers race to wall off the most valuable sections of a bank's mainframe in this quick area-control game.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "unmatched-jurassic-park-ivr",
+      "title": "Unmatched: Jurassic Park - InGen vs Raptors",
+      "bggId": 284777,
+      "emoji": "🦕",
+      "categories": [
+        "strategy"
+      ],
+      "players": {
+        "min": 2,
+        "max": 2
+      },
+      "minAge": 14,
+      "playtimeMinutes": {
+        "min": 20,
+        "max": 40
+      },
+      "complexity": 2.0,
+      "description": "A two-player duel of asymmetric fighters. Muldoon's security team against a pack of raptors, no dice involved.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "warriors-of-krynn",
+      "title": "Dragonlance: Warriors of Krynn",
+      "bggId": 361552,
+      "emoji": "🐉",
+      "categories": [
+        "cooperative"
+      ],
+      "players": {
+        "min": 3,
+        "max": 5
+      },
+      "minAge": 14,
+      "playtimeMinutes": {
+        "min": 60,
+        "max": 90
+      },
+      "complexity": 3.0,
+      "description": "Co-op Dragonlance battles. Heroes fight the Dragon Army across battlefields and adventure locations.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "clockworker",
+      "title": "Clockworker",
+      "bggId": 322623,
+      "emoji": "🤖",
+      "categories": [
+        "strategy"
+      ],
+      "players": {
+        "min": 2,
+        "max": 4
+      },
+      "minAge": 12,
+      "playtimeMinutes": {
+        "min": 60,
+        "max": 60
+      },
+      "complexity": 2.1,
+      "description": "Send robots with different movement patterns out to gather resources from a ruined Earth. Worker placement with a twist.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "hoity-toity",
+      "title": "Fair Means or Foul (Hoity Toity)",
+      "bggId": 120,
+      "emoji": "🎩",
+      "categories": [
+        "social-deduction",
+        "classic"
+      ],
+      "players": {
+        "min": 2,
+        "max": 5
+      },
+      "minAge": 12,
+      "playtimeMinutes": {
+        "min": 45,
+        "max": 45
+      },
+      "complexity": 1.9,
+      "description": "English nobles bid for antiques, show off collections, and send thieves and detectives after each other. A 1990 Spiel des Jahres winner.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "star-trek-into-the-unknown",
+      "title": "Star Trek: Into the Unknown",
+      "bggId": 401076,
+      "emoji": "🖖",
+      "categories": [
+        "strategy"
+      ],
+      "players": {
+        "min": 2,
+        "max": 6
+      },
+      "minAge": 14,
+      "playtimeMinutes": {
+        "min": 120,
+        "max": 180
+      },
+      "complexity": 3.5,
+      "description": "Command Starfleet or the Dominion through missions where diplomacy and research matter as much as combat. Miniatures included.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "star-trek-tng-romulan-challenge",
+      "title": "Star Trek: The Next Generation - Romulan Challenge",
+      "bggId": 5409,
+      "emoji": "🛸",
+      "categories": [
+        "classic"
+      ],
+      "players": {
+        "min": 2,
+        "max": 6
+      },
+      "minAge": 8,
+      "playtimeMinutes": {
+        "min": 120,
+        "max": 120
+      },
+      "complexity": null,
+      "description": "A 1994 roll-and-move where the Romulans have seized twelve Federation planets and you free them one by one.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "jaws",
+      "title": "Jaws",
+      "bggId": 272738,
+      "emoji": "🦈",
+      "categories": [
+        "social-deduction"
+      ],
+      "players": {
+        "min": 2,
+        "max": 4
+      },
+      "minAge": 12,
+      "playtimeMinutes": {
+        "min": 60,
+        "max": 60
+      },
+      "complexity": 2.2,
+      "description": "One player is the shark, hidden and hunting swimmers. The others track it down, then face it on the Orca.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "brick-like-this",
+      "title": "LEGO Brick Like This!",
+      "bggId": 439310,
+      "emoji": "🟥",
+      "categories": [
+        "party"
+      ],
+      "players": {
+        "min": 2,
+        "max": 8
+      },
+      "minAge": 7,
+      "playtimeMinutes": {
+        "min": 15,
+        "max": 15
+      },
+      "complexity": 1.5,
+      "description": "Teams of two. One describes a hidden LEGO shape, the other builds it, and everyone races.",
+      "expansions": [],
+      "notes": "Listed as \"Lego brick this\"."
+    },
+    {
+      "id": "azul",
+      "title": "Azul",
+      "bggId": 230802,
+      "emoji": "🟦",
+      "categories": [
+        "tile-laying-visual",
+        "strategy"
+      ],
+      "players": {
+        "min": 2,
+        "max": 4
+      },
+      "minAge": 8,
+      "playtimeMinutes": {
+        "min": 30,
+        "max": 45
+      },
+      "complexity": 1.8,
+      "description": "Draft beautiful tiles to decorate your palace wall without wasting any. Simple rules, sharp decisions.",
+      "expansions": [],
+      "notes": null
+    },
+    {
+      "id": "munchkin-marvel",
+      "title": "Munchkin Marvel",
+      "bggId": 189848,
+      "emoji": "🦸",
+      "categories": [
+        "party"
+      ],
+      "players": {
+        "min": 3,
+        "max": 6
+      },
+      "minAge": 10,
+      "playtimeMinutes": {
+        "min": 60,
+        "max": 120
+      },
+      "complexity": 2.1,
+      "description": "Munchkin with Marvel heroes and villains. Kick down doors, fight, loot, backstab.",
+      "expansions": [],
+      "notes": "Standalone game."
+    },
+    {
+      "id": "munchkin-warhammer-40k",
+      "title": "Munchkin Warhammer 40,000",
+      "bggId": 257700,
+      "emoji": "💀",
+      "categories": [
+        "party"
+      ],
+      "players": {
+        "min": 3,
+        "max": 6
+      },
+      "minAge": 12,
+      "playtimeMinutes": {
+        "min": 90,
+        "max": 90
+      },
+      "complexity": 2.0,
+      "description": "Munchkin in the grim darkness of the far future. Ultramarines, Necrons and Orks hunting loot.",
+      "expansions": [],
+      "notes": "Standalone game."
+    },
+    {
+      "id": "munchkin-disney",
+      "title": "Munchkin Disney",
+      "bggId": 312346,
+      "emoji": "🐭",
+      "categories": [
+        "party"
+      ],
+      "players": {
+        "min": 3,
+        "max": 6
+      },
+      "minAge": 10,
+      "playtimeMinutes": {
+        "min": 60,
+        "max": 60
+      },
+      "complexity": 2.0,
+      "description": "Munchkin with Disney characters. Same silliness, friendlier faces.",
+      "expansions": [],
+      "notes": "Standalone game."
+    },
+    {
+      "id": "bloodborne",
+      "title": "Bloodborne: The Board Game",
+      "bggId": 273330,
+      "emoji": "🩸",
+      "categories": [
+        "cooperative"
+      ],
+      "players": {
+        "min": 1,
+        "max": 4
+      },
+      "minAge": 14,
+      "playtimeMinutes": {
+        "min": 60,
+        "max": 90
+      },
+      "complexity": 3.1,
+      "description": "Card-driven co-op campaign of hunters in Yharnam. Manage your hand, face the Blood Moon, and expect losses.",
       "expansions": [],
       "notes": null
     }
