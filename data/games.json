@@ -7,7 +7,7 @@
   "categories": [
     {
       "id": "cooperative",
-      "name": "Co-operative Games",
+      "name": "Co-operative",
       "tagline": "Work together, or die trying...",
       "emoji": "🟩"
     },
@@ -19,27 +19,33 @@
     },
     {
       "id": "tile-laying-visual",
-      "name": "Tile-Laying & Visual Games",
+      "name": "Tile-Laying & Visual",
       "tagline": null,
       "emoji": "🧩"
     },
     {
       "id": "social-deduction",
-      "name": "Social Deduction & Bluffing Games",
+      "name": "Social Deduction & Bluffing",
       "tagline": null,
       "emoji": "🤔"
     },
     {
       "id": "party",
-      "name": "Party & Word Games",
+      "name": "Party & Word",
       "tagline": null,
       "emoji": "🎉"
     },
     {
       "id": "classic",
-      "name": "Classics & Family Games",
+      "name": "Classics & Family",
       "tagline": null,
       "emoji": "🎯"
+    },
+    {
+      "id": "team-vs-team",
+      "name": "Team vs Team",
+      "tagline": null,
+      "emoji": "🤝"
     }
   ],
   "games": [
@@ -49,7 +55,8 @@
       "bggId": 171131,
       "emoji": "🌊",
       "categories": [
-        "cooperative"
+        "cooperative",
+        "team-vs-team"
       ],
       "players": {
         "min": 6,
@@ -786,7 +793,8 @@
       "emoji": "🗝️",
       "categories": [
         "party",
-        "social-deduction"
+        "social-deduction",
+        "team-vs-team"
       ],
       "players": {
         "min": 2,
@@ -1031,7 +1039,8 @@
       "emoji": "❓",
       "categories": [
         "classic",
-        "party"
+        "party",
+        "team-vs-team"
       ],
       "players": {
         "min": 2,
@@ -1400,7 +1409,8 @@
       "bggId": 439310,
       "emoji": "🟥",
       "categories": [
-        "party"
+        "party",
+        "team-vs-team"
       ],
       "players": {
         "min": 2,

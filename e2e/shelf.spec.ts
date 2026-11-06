@@ -35,10 +35,10 @@ test.describe('search, filter, sort', () => {
 
   test('category chips match any selected category', async ({ page }) => {
     await page.goto('/')
-    await page.getByRole('button', { name: 'Party & Word Games' }).click()
+    await page.getByRole('button', { name: 'Party & Word', exact: true }).click()
     const party = await titles(page).count()
     expect(party).toBeGreaterThan(0)
-    await page.getByRole('button', { name: 'Co-operative Games' }).click()
+    await page.getByRole('button', { name: 'Co-operative', exact: true }).click()
     expect(await titles(page).count()).toBeGreaterThan(party)
   })
 
@@ -63,7 +63,7 @@ test.describe('search, filter, sort', () => {
 test.describe('links to a search', () => {
   test('opens pre-filtered from the query string', async ({ page }) => {
     await page.goto('/?cat=cooperative&time=hour&sort=playtime')
-    await expect(page.getByRole('button', { name: 'Co-operative Games' })).toHaveAttribute('aria-pressed', 'true')
+    await expect(page.getByRole('button', { name: 'Co-operative', exact: true })).toHaveAttribute('aria-pressed', 'true')
     await expect(page.getByRole('button', { name: 'About an hour' })).toHaveAttribute('aria-pressed', 'true')
     await expect(page.getByLabel('Sort by')).toHaveValue('playtime')
     await expect(count(page)).toHaveText(/^\d+ of \d+ games$/)
@@ -82,7 +82,7 @@ test.describe('links to a search', () => {
     test.skip(browserName !== 'chromium', 'clipboard permissions are Chromium only')
     await context.grantPermissions(['clipboard-read', 'clipboard-write'])
     await page.goto('/')
-    await page.getByRole('button', { name: 'Co-operative Games' }).click()
+    await page.getByRole('button', { name: 'Co-operative', exact: true }).click()
     await page.getByRole('button', { name: 'More players' }).click()
     await page.getByRole('button', { name: 'More players' }).click()
 
@@ -98,7 +98,7 @@ test.describe('links to a search', () => {
 
     await page.goto(copied)
     await expect(page.locator('.stepper-num')).toHaveText('3')
-    await expect(page.getByRole('button', { name: 'Co-operative Games' })).toHaveAttribute('aria-pressed', 'true')
+    await expect(page.getByRole('button', { name: 'Co-operative', exact: true })).toHaveAttribute('aria-pressed', 'true')
   })
 })
 
