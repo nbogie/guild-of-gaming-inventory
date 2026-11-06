@@ -737,7 +737,7 @@
     },
     {
       "id": "deception-murder-in-hong-kong",
-      "title": "Deception: Murder in Hong Kong",
+      "title": "Deception: Murder in Hong Kong (Getäuscht)",
       "bggId": 156129,
       "emoji": "🔍",
       "categories": [
@@ -755,7 +755,7 @@
       "complexity": 1.6,
       "description": "A silent forensic scientist drops clues while investigators hunt the murderer hiding among them.",
       "expansions": [],
-      "notes": null
+      "notes": "(Box may be labelled Getäuscht)"
     },
     {
       "id": "codenames",
@@ -1071,7 +1071,7 @@
     },
     {
       "id": "medical-mysteries-nyc",
-      "title": "Medical Mysteries: NYC Emergency Room",
+      "title": "Medical Mysteries: New York Emergency Room",
       "bggId": 415036,
       "emoji": "🏥",
       "categories": [
@@ -1133,6 +1133,11 @@
       "complexity": 3.1,
       "description": "Brutal co-op dungeon crawl with miniatures. Learn the boss patterns or die trying, again and again.",
       "expansions": [
+        {
+          "title": "Black Dragon Kalameet Boss Expansion",
+          "bggId": 203724,
+          "note": "Adds a terrifying new mega boss and new encounter cards for larger battles."
+        },
         {
           "title": "Characters Expansion",
           "bggId": 285975,
